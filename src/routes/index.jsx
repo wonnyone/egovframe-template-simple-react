@@ -32,6 +32,10 @@ import EgovSupportDownloadCreate from 'pages/support/download/EgovDownloadCreate
 import EgovSupportQnaList from 'pages/support/qna/EgovQnaList';
 import EgovSupportQnaDetail from 'pages/support/qna/EgovQnaDetail';
 import EgovSupportApply from 'pages/support/apply/EgovSupportApply';
+//jht
+import EgovCatalogList from 'pages/support/catalog/EgovCatalogList';
+import EgovCatalogDetail from 'pages/support/catalog/EgovCatalogDetail';
+import EgovCatalogEdit from 'pages/support/catalog/EgovCatalogEdit';
 
 //INFORM
 import EgovDailyList from 'pages/inform/daily/EgovDailyList';
@@ -185,6 +189,11 @@ const SecondRoutes = () => {
         <Route path={URL.SUPPORT_QNA_DETAIL} element={<EgovSupportQnaDetail />} />
 
         <Route path={URL.SUPPORT_APPLY} element={<EgovSupportApply />} />
+
+        <Route path={URL.SUPPORT_CATALOG} element={<EgovCatalogList />} />
+        <Route path={URL.SUPPORT_CATALOG_DETAIL} element={<EgovCatalogDetail />} />
+        <Route path={URL.SUPPORT_CATALOG_CREATE} element={<EgovCatalogEdit mode={CODE.MODE_CREATE} />} />
+        <Route path={URL.SUPPORT_CATALOG_MODIFY} element={<EgovCatalogEdit mode={CODE.MODE_MODIFY} />} />
 
         {/* INFORM */}
         <Route path={URL.INFORM} element={<Navigate to={URL.INFORM_DAILY} />} />

@@ -28,6 +28,11 @@ const URL = {
     SUPPORT_QNA                 : "/support/qna", // 고객지원/묻고답하기
     SUPPORT_QNA_DETAIL          : "/support/qna/detail", // 고객지원/묻고답하기/상세
     SUPPORT_APPLY               : "/support/apply", // 고객지원/서비스신청
+    //jht
+    SUPPORT_CATALOG             : "/support/catalog", // 고객지원/카달로그
+    SUPPORT_CATALOG_DETAIL      : "/support/catalog/detail", // 고객지원/카달로그상세
+    SUPPORT_CATALOG_CREATE      : "/support/catalog/create", // 고객지원/카달로그등록
+    SUPPORT_CATALOG_MODIFY      : "/support/catalog/modify", // 고객지원/카달로그수정
     
     //INFORM
     INFORM                      : "/inform", // 알림마당 
