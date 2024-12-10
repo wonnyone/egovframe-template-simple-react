@@ -33,6 +33,18 @@ const URL = {
     SUPPORT_CATALOG_DETAIL      : "/support/catalog/detail", // 고객지원/카달로그상세
     SUPPORT_CATALOG_CREATE      : "/support/catalog/create", // 고객지원/카달로그등록
     SUPPORT_CATALOG_MODIFY      : "/support/catalog/modify", // 고객지원/카달로그수정
+    SUPPORT_MSA                 : "/support/msa", // 고객지원/자재승인원
+    SUPPORT_MSA_DETAIL          : "/support/msa/detail", // 고객지원/자재승인원상세
+    SUPPORT_MSA_CREATE          : "/support/msa/create", // 고객지원/자재승인원등록
+    SUPPORT_MSA_MODIFY          : "/support/msa/modify", // 고객지원/자재승인원수정
+    SUPPORT_CNTC                : "/support/cntc", // 고객지원/국세완납증명서
+    SUPPORT_CNTC_DETAIL         : "/support/cntc/detail", // 고객지원/국세완납증명서상세
+    SUPPORT_CNTC_CREATE         : "/support/cntc/create", // 고객지원/국세완납증명서등록
+    SUPPORT_CNTC_MODIFY         : "/support/cntc/modify", // 고객지원/국세완납증명서수정
+    SUPPORT_MENUAL              : "/support/menual", // 고객지원/매뉴얼
+    SUPPORT_MENUAL_DETAIL       : "/support/menual/detail", // 고객지원/매뉴얼상세
+    SUPPORT_MENUAL_CREATE       : "/support/menual/create", // 고객지원/매뉴얼등록
+    SUPPORT_MENUAL_MODIFY       : "/support/menual/modify", // 고객지원/매뉴얼수정
     
     //INFORM
     INFORM                      : "/inform", // 알림마당 

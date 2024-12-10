@@ -36,6 +36,15 @@ import EgovSupportApply from 'pages/support/apply/EgovSupportApply';
 import EgovCatalogList from 'pages/support/catalog/EgovCatalogList';
 import EgovCatalogDetail from 'pages/support/catalog/EgovCatalogDetail';
 import EgovCatalogEdit from 'pages/support/catalog/EgovCatalogEdit';
+import EgovMsaList from 'pages/support/msa/EgovMsaList';
+import EgovMsaDetail from 'pages/support/msa/EgovMsaDetail';
+import EgovMsaEdit from 'pages/support/msa/EgovMsaEdit';
+import EgovCntcList from 'pages/support/cntc/EgovCntcList';
+import EgovCntcDetail from 'pages/support/cntc/EgovCntcDetail';
+import EgovCntcEdit from 'pages/support/cntc/EgovCntcEdit';
+import EgovMenualList from 'pages/support/menual/EgovMenualList';
+import EgovMenualDetail from 'pages/support/menual/EgovMenualDetail';
+import EgovMenualEdit from 'pages/support/menual/EgovMenualEdit';
 
 //INFORM
 import EgovDailyList from 'pages/inform/daily/EgovDailyList';
@@ -194,7 +203,19 @@ const SecondRoutes = () => {
         <Route path={URL.SUPPORT_CATALOG_DETAIL} element={<EgovCatalogDetail />} />
         <Route path={URL.SUPPORT_CATALOG_CREATE} element={<EgovCatalogEdit mode={CODE.MODE_CREATE} />} />
         <Route path={URL.SUPPORT_CATALOG_MODIFY} element={<EgovCatalogEdit mode={CODE.MODE_MODIFY} />} />
-
+        <Route path={URL.SUPPORT_MSA} element={<EgovMsaList />} />
+        <Route path={URL.SUPPORT_MSA_DETAIL} element={<EgovMsaDetail />} />
+        <Route path={URL.SUPPORT_MSA_CREATE} element={<EgovMsaEdit mode={CODE.MODE_CREATE} />} />
+        <Route path={URL.SUPPORT_MSA_MODIFY} element={<EgovMsaEdit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.SUPPORT_CNTC} element={<EgovCntcList />} />
+        <Route path={URL.SUPPORT_CNTC_DETAIL} element={<EgovCntcDetail />} />
+        <Route path={URL.SUPPORT_CNTC_CREATE} element={<EgovCntcEdit mode={CODE.MODE_CREATE} />} />
+        <Route path={URL.SUPPORT_CNTC_MODIFY} element={<EgovCntcEdit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.SUPPORT_MENUAL} element={<EgovMenualList />} />
+        <Route path={URL.SUPPORT_MENUAL_DETAIL} element={<EgovMenualDetail />} />
+        <Route path={URL.SUPPORT_MENUAL_CREATE} element={<EgovMenualEdit mode={CODE.MODE_CREATE} />} />
+        <Route path={URL.SUPPORT_MENUAL_MODIFY} element={<EgovMenualEdit mode={CODE.MODE_MODIFY} />} />
+        
         {/* INFORM */}
         <Route path={URL.INFORM} element={<Navigate to={URL.INFORM_DAILY} />} />
 
