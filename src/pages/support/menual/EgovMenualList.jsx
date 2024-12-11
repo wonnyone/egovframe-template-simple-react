@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
-import { NOTICE_BBS_ID } from 'config';
+import { MENUAL_BBS_ID } from 'config';
 
 import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavSupport';
 import EgovPaging from 'components/EgovPaging';
@@ -12,12 +12,12 @@ import { itemIdxByPage } from 'utils/calc';
 import { getSessionItem } from 'utils/storage';
 
 function EgovMenualList(props) {
-    console.group("EgovNoticeList");
-    console.log("[Start] EgovNoticeList ------------------------------");
-    console.log("EgovNoticeList [props] : ", props);
+    console.group("EgovMenualList");
+    console.log("[Start] EgovMenualList ------------------------------");
+    console.log("EgovMenualList [props] : ", props);
 	
     const location = useLocation();
-    console.log("EgovNoticeList [location] : ", location);
+    console.log("EgovMenualList [location] : ", location);
 
 	const cndRef = useRef();
     const wrdRef = useRef();
@@ -25,7 +25,7 @@ function EgovMenualList(props) {
 	const sessionUser = getSessionItem('loginUser');
 	const sessionUserSe = sessionUser?.userSe;
 	
-    const bbsId = location.state?.bbsId || NOTICE_BBS_ID; 
+    const bbsId = location.state?.bbsId || MENUAL_BBS_ID; 
 	
 	// eslint-disable-next-line no-unused-vars
     const [searchCondition, setSearchCondition] = useState(location.state?.searchCondition || { bbsId: bbsId, pageIndex: 1, searchCnd: '0', searchWrd: '' });// 기존 조회에서 접근 했을 시 || 신규로 접근 했을 시
@@ -36,7 +36,7 @@ function EgovMenualList(props) {
     const [listTag, setListTag] = useState([]);
 
     const retrieveList = useCallback((searchCondition) => {
-        console.groupCollapsed("EgovNoticeList.retrieveList()");
+        console.groupCollapsed("EgovMenualList.retrieveList()");
 
         const retrieveListURL = '/board'+EgovNet.getQueryString(searchCondition);;
         const requestOptions = {
@@ -96,7 +96,7 @@ function EgovMenualList(props) {
                 console.log("err response : ", resp);
             }
         );
-        console.groupEnd("EgovNoticeList.retrieveList()");
+        console.groupEnd("EgovMenualList.retrieveList()");
     },[]);
 
     useEffect(() => {
@@ -104,8 +104,8 @@ function EgovMenualList(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log("------------------------------EgovNoticeList [End]");
-    console.groupEnd("EgovNoticeList");
+    console.log("------------------------------EgovMenualList [End]");
+    console.groupEnd("EgovMenualList");
     return (
         <div className="container">
             <div className="c_wrap">

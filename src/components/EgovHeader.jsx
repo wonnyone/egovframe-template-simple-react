@@ -139,6 +139,11 @@ function EgovHeader() {
                             <li><NavLink to={URL.SUPPORT_MSA} className={({ isActive }) => (isActive ? "cur" : "")}>자재승인원</NavLink></li>
                             <li><NavLink to={URL.SUPPORT_CNTC} className={({ isActive }) => (isActive ? "cur" : "")}>국세완납증명서</NavLink></li>
                             <li><NavLink to={URL.SUPPORT_MENUAL} className={({ isActive }) => (isActive ? "cur" : "")}>매뉴얼</NavLink></li>
+                            <ul>
+                                <li><NavLink to={URL.SUPPORT_SAM} className={({ isActive }) => (isActive ? "cur" : "")}>유지관리 지침서</NavLink></li>
+                                <li><NavLink to={URL.SUPPORT_INSTALL} className={({ isActive }) => (isActive ? "cur" : "")}>설치도</NavLink></li>
+                                <li><NavLink to={URL.SUPPORT_CD} className={({ isActive }) => (isActive ? "cur" : "")}>결선도</NavLink></li>
+                            </ul>
                         </ul>
                     </div>
                     <div className="col">
@@ -213,6 +218,11 @@ function EgovHeader() {
                             <li><NavLink to={URL.SUPPORT_MSA} className={({ isActive }) => (isActive ? "cur" : "")}>자재승인원</NavLink></li>
                             <li><NavLink to={URL.SUPPORT_CNTC} className={({ isActive }) => (isActive ? "cur" : "")}>국세완납증명서</NavLink></li>
                             <li><NavLink to={URL.SUPPORT_MENUAL} className={({ isActive }) => (isActive ? "cur" : "")}>매뉴얼</NavLink></li>
+                            <ul>
+                                <li><NavLink to={URL.SUPPORT_SAM} className={({ isActive }) => (isActive ? "cur" : "")}>유지관리 지침서</NavLink></li>
+                                <li><NavLink to={URL.SUPPORT_INSTALL} className={({ isActive }) => (isActive ? "cur" : "")}>설치도</NavLink></li>
+                                <li><NavLink to={URL.SUPPORT_CD} className={({ isActive }) => (isActive ? "cur" : "")}>결선도</NavLink></li>
+                            </ul>
                         </ul>
                     </div>
                     <h3><Link to={URL.INFORM}>알림마당</Link></h3>

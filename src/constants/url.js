@@ -45,6 +45,18 @@ const URL = {
     SUPPORT_MENUAL_DETAIL       : "/support/menual/detail", // 고객지원/매뉴얼상세
     SUPPORT_MENUAL_CREATE       : "/support/menual/create", // 고객지원/매뉴얼등록
     SUPPORT_MENUAL_MODIFY       : "/support/menual/modify", // 고객지원/매뉴얼수정
+    SUPPORT_SAM                 : "/support/sam", // 고객지원/유지관리지침서
+    SUPPORT_SAM_DETAIL          : "/support/sam/detail", // 고객지원/유지관리지침서상세
+    SUPPORT_SAM_CREATE          : "/support/sam/create", // 고객지원/유지관리지침서등록
+    SUPPORT_SAM_MODIFY          : "/support/sam/modify", // 고객지원/유지관리지침서수정
+    SUPPORT_INSTALL             : "/support/install", // 고객지원/설치도
+    SUPPORT_INSTALL_DETAIL      : "/support/install/detail", // 고객지원/설치도상세
+    SUPPORT_INSTALL_CREATE      : "/support/install/create", // 고객지원/설치도등록
+    SUPPORT_INSTALL_MODIFY      : "/support/install/modify", // 고객지원/설치도수정
+    SUPPORT_CD                  : "/support/cd", // 고객지원/결선도
+    SUPPORT_CD_DETAIL           : "/support/cd/detail", // 고객지원/결선도상세
+    SUPPORT_CD_CREATE           : "/support/cd/create", // 고객지원/결선도등록
+    SUPPORT_CD_MODIFY           : "/support/cd/modify", // 고객지원/결선도수정
     
     //INFORM
     INFORM                      : "/inform", // 알림마당 
