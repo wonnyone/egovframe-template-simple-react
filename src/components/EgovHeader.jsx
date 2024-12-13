@@ -70,10 +70,11 @@ function EgovHeader() {
                 <div className="gnb">
                     <h2 className="blind">주메뉴</h2>
                     <ul>
-                        <li><NavLink to={URL.ABOUT} className={({ isActive }) => (isActive ? "cur" : "")}>사이트소개</NavLink></li>
-                        <li><NavLink to={URL.INTRO} className={({ isActive }) => (isActive ? "cur" : "")}>정보마당</NavLink></li>
-                        <li><NavLink to={URL.SUPPORT} className={({ isActive }) => (isActive ? "cur" : "")}>고객지원</NavLink></li>
-                        <li><NavLink to={URL.INFORM} className={({ isActive }) => (isActive ? "cur" : "")}>알림마당</NavLink></li>
+                        <li><NavLink to={URL.ABOUT} className={({ isActive }) => (isActive ? "cur" : "")}>회사소개</NavLink></li>
+                        <li><NavLink to={URL.INTRO} className={({ isActive }) => (isActive ? "cur" : "")}>제품소개</NavLink></li>
+                        <li><NavLink to={URL.INFORM} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
+                        <li><NavLink to={URL.SUPPORT} className={({ isActive }) => (isActive ? "cur" : "")}>고객센터</NavLink></li>
+                        <li><NavLink to={URL.MALL} className={({ isActive }) => (isActive ? "cur" : "")}>쇼핑몰</NavLink></li>
                         {sessionUserSe ==='ADM' &&
                             <li><NavLink to={URL.ADMIN} className={({ isActive }) => (isActive ? "cur" : "")}>사이트관리</NavLink></li>
                         }
@@ -114,36 +115,49 @@ function EgovHeader() {
                 <h2 className="blind">전체메뉴</h2>
                 <div className="inner">
                     <div className="col">
-                        <h3>사이트소개</h3>
+                        <h3>회사소개</h3>
                         <ul>
-                            <li><NavLink to={URL.ABOUT_SITE} className={({ isActive }) => (isActive ? "cur" : "")}>소개</NavLink></li>
-                            <li><NavLink to={URL.ABOUT_HISTORY} className={({ isActive }) => (isActive ? "cur" : "")}>연혁</NavLink></li>
-                            <li><NavLink to={URL.ABOUT_ORGANIZATION} className={({ isActive }) => (isActive ? "cur" : "")}>조직소개</NavLink></li>
-                            <li><NavLink to={URL.ABOUT_LOCATION} className={({ isActive }) => (isActive ? "cur" : "")}>찾아오시는 길</NavLink></li>
+                            <li><NavLink to={URL.ABOUT_SITE} className={({ isActive }) => (isActive ? "cur" : "")}>인사말</NavLink></li>
+                            {/* <li><NavLink to={URL.ABOUT_HISTORY} className={({ isActive }) => (isActive ? "cur" : "")}>연혁</NavLink></li> */}
+                            <li><NavLink to={URL.ABOUT_LOCATION} className={({ isActive }) => (isActive ? "cur" : "")}>오시는 길</NavLink></li>
+                            <li><NavLink to={URL.ABOUT_ORGANIZATION} className={({ isActive }) => (isActive ? "cur" : "")}>인증, 특허</NavLink></li>
                         </ul>
                     </div>
                     <div className="col">
-                        <h3>정보마당</h3>
+                        <h3>제품소개</h3>
                         <ul>
-                            <li><NavLink to={URL.INTRO_WORKS} className={({ isActive }) => (isActive ? "cur" : "")}>주요사업 소개</NavLink></li>
-                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li>
+                            {/* <li><NavLink to={URL.INTRO_WORKS} className={({ isActive }) => (isActive ? "cur" : "")}>주요사업 소개</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li> */}
+                            <li><NavLink to={URL.INTRO_SERVICE1} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE2} className={({ isActive }) => (isActive ? "cur" : "")}>온수미터</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE3} className={({ isActive }) => (isActive ? "cur" : "")}>적산열량계</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE4} className={({ isActive }) => (isActive ? "cur" : "")}>원격 지시부</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE5} className={({ isActive }) => (isActive ? "cur" : "")}>컨버터</NavLink></li>
                         </ul>
                     </div>
                     <div className="col">
-                        <h3>고객지원</h3>
-                        <ul>
-                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>묻고 답하기</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>서비스 신청</NavLink></li>
-                        </ul>
-                    </div>
-                    <div className="col">
-                        <h3>알림마당</h3>
+                        <h3>자료실</h3>
                         <ul>
                             <li><NavLink to={URL.INFORM_DAILY}>오늘의 행사</NavLink></li>
                             <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
                             <li><NavLink to={URL.INFORM_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항</NavLink></li>
                             <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className="col">
+                        <h3>고객센터</h3>
+                        <ul>
+                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>서비스 신청</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>FAQ</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className="col">
+                        <h3>쇼핑몰</h3>
+                        <ul>
+                            <li><a href={'https://www.mxmall.com'} target='_blank' rel='noopener noreferrer'>MX 쇼핑몰</a></li>
+                            <li><a href={'https://www.naver.com'} target='_blank' rel='noopener noreferrer'>네이버 쇼핑몰</a></li>
+                            <li><a href={'https://www.coupang.com'} target='_blank' rel='noopener noreferrer'>쿠팡 쇼핑몰</a></li>
                         </ul>
                     </div>
                     {sessionUserSe ==='ADM' &&
@@ -183,7 +197,7 @@ function EgovHeader() {
                     <button className="btn noscript close" type="button">전체메뉴 닫기</button>
                 </div>
                 <div className="menu">
-                    <h3><Link to={URL.ABOUT}>사이트소개</Link></h3>
+                    <h3><Link to={URL.ABOUT}>회사소개</Link></h3>
                     <div className="submenu closed">
                         <ul>
                             <li><NavLink to={URL.ABOUT_SITE} className={({ isActive }) => (isActive ? "cur" : "")}>소개</NavLink></li>
@@ -192,28 +206,41 @@ function EgovHeader() {
                             <li><NavLink to={URL.ABOUT_LOCATION} className={({ isActive }) => (isActive ? "cur" : "")}>찾아오시는 길</NavLink></li>
                         </ul>
                     </div>
-                    <h3><Link to={URL.INTRO}>정보마당</Link></h3>
+                    <h3><Link to={URL.INTRO}>제품소개</Link></h3>
                     <div className="submenu closed">
                         <ul>
-                            <li><NavLink to={URL.INTRO_WORKS} className={({ isActive }) => (isActive ? "cur" : "")}>주요사업 소개</NavLink></li>
-                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li>
+                            {/* <li><NavLink to={URL.INTRO_WORKS} className={({ isActive }) => (isActive ? "cur" : "")}>주요사업 소개</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li> */}
+                            <li><NavLink to={URL.INTRO_SERVICE1} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE2} className={({ isActive }) => (isActive ? "cur" : "")}>온수미터</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE3} className={({ isActive }) => (isActive ? "cur" : "")}>적산열량계</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE4} className={({ isActive }) => (isActive ? "cur" : "")}>원격 지시부</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE5} className={({ isActive }) => (isActive ? "cur" : "")}>컨버터</NavLink></li>
                         </ul>
                     </div>
-                    <h3><Link to={URL.SUPPORT}>고객지원</Link></h3>
-                    <div className="submenu closed">
-                        <ul>
-                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>묻고 답하기</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>서비스 신청</NavLink></li>
-                        </ul>
-                    </div>
-                    <h3><Link to={URL.INFORM}>알림마당</Link></h3>
+                    <h3><Link to={URL.INFORM}>자료실</Link></h3>
                     <div className="submenu closed">
                         <ul>
                             <li><NavLink to={URL.INFORM_DAILY}>오늘의 행사</NavLink></li>
                             <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
                             <li><NavLink to={URL.INFORM_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항</NavLink></li>
                             <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li>
+                        </ul>
+                    </div>
+                    <h3><Link to={URL.SUPPORT}>고객센터</Link></h3>
+                    <div className="submenu closed">
+                        <ul>
+                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>서비스 신청</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>FAQ</NavLink></li>
+                        </ul>
+                    </div>
+                    <h3><Link to={URL.MALL}>쇼핑몰</Link></h3>
+                    <div className="submenu closed">
+                        <ul>
+                            <li><a href={'https://www.mxmall.com'} target='_blank' rel='noopener noreferrer'>MX 쇼핑몰</a></li>
+                            <li><a href={'https://www.naver.com'} target='_blank' rel='noopener noreferrer'>네이버 쇼핑몰</a></li>
+                            <li><a href={'https://www.coupang.com'} target='_blank' rel='noopener noreferrer'>쿠팡 쇼핑몰</a></li>
                         </ul>
                     </div>
                     {sessionUserSe ==='ADM' &&

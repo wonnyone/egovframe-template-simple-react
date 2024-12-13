@@ -24,6 +24,11 @@ import EgovAboutLocation from 'pages/about/EgovAboutLocation';
 //INTRO
 import EgovIntroWork from 'pages/intro/EgovIntroWork';
 import EgovIntroService from 'pages/intro/EgovIntroService';
+import EgovIntroService1 from 'pages/intro/EgovIntroService1';
+import EgovIntroService2 from 'pages/intro/EgovIntroService2';
+import EgovIntroService3 from 'pages/intro/EgovIntroService3';
+import EgovIntroService4 from 'pages/intro/EgovIntroService4';
+import EgovIntroService5 from 'pages/intro/EgovIntroService5';
 
 //SUPPORT
 import EgovSupportDownloadList from 'pages/support/download/EgovDownloadList';
@@ -166,13 +171,18 @@ const SecondRoutes = () => {
         <Route path={URL.ABOUT} element={<Navigate to={URL.ABOUT_SITE} />} />
         <Route path={URL.ABOUT_SITE} element={<EgovAboutSite />} />
         <Route path={URL.ABOUT_HISTORY} element={<EgovAboutHistory />} />
-        <Route path={URL.ABOUT_ORGANIZATION} element={<EgovAboutOrganization />} />
         <Route path={URL.ABOUT_LOCATION} element={<EgovAboutLocation />} />
+        <Route path={URL.ABOUT_ORGANIZATION} element={<EgovAboutOrganization />} />
 
         {/* INTRO */}
-        <Route path={URL.INTRO} element={<Navigate to={URL.INTRO_WORKS} />} />
-        <Route path={URL.INTRO_WORKS} element={<EgovIntroWork />} />
-        <Route path={URL.INTRO_SERVICE} element={<EgovIntroService />} />
+        <Route path={URL.INTRO} element={<Navigate to={URL.INTRO_SERVICE1} />} />
+        {/* <Route path={URL.INTRO_WORKS} element={<EgovIntroWork />} /> */}
+        {/* <Route path={URL.INTRO_SERVICE} element={<EgovIntroService />} /> */}
+        <Route path={URL.INTRO_SERVICE1} element={<EgovIntroService1 />} />
+        <Route path={URL.INTRO_SERVICE2} element={<EgovIntroService2 />} />
+        <Route path={URL.INTRO_SERVICE3} element={<EgovIntroService3 />} />
+        <Route path={URL.INTRO_SERVICE4} element={<EgovIntroService4 />} />
+        <Route path={URL.INTRO_SERVICE5} element={<EgovIntroService5 />} />
 
         {/* SUPPORT */}
         <Route path={URL.SUPPORT} element={<Navigate to={URL.SUPPORT_DOWNLOAD} />} />

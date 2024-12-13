@@ -11,8 +11,8 @@ function EgovQnaDetail() {
                 <div className="location">
                     <ul>
                         <li><Link to="" className="home">Home</Link></li>
-                        <li><Link to="">고객지원</Link></li>
-                        <li>소개</li>
+                        <li><Link to="">고객센터</Link></li>
+                        <li>FAQ</li>
                     </ul>
                 </div>
                 {/* <!--// Location --> */}
