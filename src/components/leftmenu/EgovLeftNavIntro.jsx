@@ -12,6 +12,7 @@ function EgovLeftNavIntro() {
                 <ul className="menu4">
                     <li><NavLink to={URL.INTRO_WORKS} className={({ isActive }) => (isActive ? "cur" : "")}>주요사업 소개</NavLink></li>
                     <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li>
+                    <li><NavLink to={URL.INTRO_WAMETER} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li>
                 </ul>
             </div>
         </div>

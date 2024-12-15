@@ -19,6 +19,7 @@ const URL = {
     INTRO                       : "/intro", //정보마당
     INTRO_WORKS                 : "/intro/works", // 정보마당/주요사업소개
     INTRO_SERVICE               : "/intro/service", // 정보마당/주요서비스소개
+    INTRO_WAMETER               : "/intro/wameter", // 정보마당/수도미터
     
     //SUPPORT
     SUPPORT                     : "/support", // 고객지원
