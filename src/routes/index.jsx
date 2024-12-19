@@ -198,7 +198,7 @@ const SecondRoutes = () => {
         <Route path={URL.ABOUT_ORGANIZATION} element={<EgovAboutOrganization />} />
 
         {/* INTRO */}
-        <Route path={URL.INTRO} element={<Navigate to={URL.INTRO_WORKS} />} />
+        <Route path={URL.INTRO} element={<Navigate to={URL.INTRO_SERVICE1} />} />
         <Route path={URL.INTRO_WORKS} element={<EgovIntroWork />} />
         <Route path={URL.INTRO_SERVICE} element={<EgovIntroService />} />
         <Route path={URL.INTRO_SERVICE1} element={<EgovIntroService1 />} />
