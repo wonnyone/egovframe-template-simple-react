@@ -137,29 +137,30 @@ function EgovHeader() {
                         </ul>
                     </div>
                     <div className="col">
-                        <h3>고객센터</h3>
+                        <h3>자료실</h3>
                         <ul>
-                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>묻고 답하기</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>서비스 신청</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_CATALOG} className={({ isActive }) => (isActive ? "cur" : "")}>카달로그</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_MSA} className={({ isActive }) => (isActive ? "cur" : "")}>자재승인원</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_CNTC} className={({ isActive }) => (isActive ? "cur" : "")}>국세완납증명서</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_MENUAL} className={({ isActive }) => (isActive ? "cur" : "")}>매뉴얼</NavLink></li>
-                            <ul>
-                                <li><NavLink to={URL.SUPPORT_SAM} className={({ isActive }) => (isActive ? "cur" : "")}>유지관리 지침서</NavLink></li>
-                                <li><NavLink to={URL.SUPPORT_INSTALL} className={({ isActive }) => (isActive ? "cur" : "")}>설치도</NavLink></li>
-                                <li><NavLink to={URL.SUPPORT_CD} className={({ isActive }) => (isActive ? "cur" : "")}>결선도</NavLink></li>
-                            </ul>
+                            {/* <li><NavLink to={URL.INFORM_DAILY}>오늘의 행사</NavLink></li>
+                            <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
+                            <li><NavLink to={URL.INFORM_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항</NavLink></li>
+                            <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li> */}
+                            <li><NavLink to={URL.INFORM_CATALOG} className={({ isActive }) => (isActive ? "cur" : "")}>카달로그</NavLink></li>
+                            <li><NavLink to={URL.INFORM_MSA} className={({ isActive }) => (isActive ? "cur" : "")}>자재승인원</NavLink></li>
+                            <li><NavLink to={URL.INFORM_CNTC} className={({ isActive }) => (isActive ? "cur" : "")}>국세완납증명서</NavLink></li>
+                            <li><NavLink to={URL.INFORM_MANUAL} className={({ isActive }) => (isActive ? "cur" : "")}>매뉴얼</NavLink>
+                                <ul>
+                                    <li><NavLink to={URL.INFORM_SAM} className={({ isActive }) => (isActive ? "cur" : "")}>유지관리 지침서</NavLink></li>
+                                    <li><NavLink to={URL.INFORM_INSTALL} className={({ isActive }) => (isActive ? "cur" : "")}>설치도</NavLink></li>
+                                    <li><NavLink to={URL.INFORM_CD} className={({ isActive }) => (isActive ? "cur" : "")}>결선도</NavLink></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div className="col">
-                        <h3>알림마당</h3>
+                        <h3>고객센터</h3>
                         <ul>
-                            <li><NavLink to={URL.INFORM_DAILY}>오늘의 행사</NavLink></li>
-                            <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
-                            <li><NavLink to={URL.INFORM_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항</NavLink></li>
-                            <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>견적문의</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>묻고 답하기</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>AS 안내</NavLink></li>
                         </ul>
                     </div>
                     <div className="col">
@@ -229,30 +230,31 @@ function EgovHeader() {
                             <li><NavLink to={URL.INTRO_SERVICE5} className={({ isActive }) => (isActive ? "cur" : "")}>컨버터</NavLink></li>
                         </ul>
                     </div>
-                    <h3><Link to={URL.SUPPORT}>고객센터</Link></h3>
-                    <div className="submenu closed">
-                        <ul>
-                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>묻고 답하기</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>서비스 신청</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_CATALOG} className={({ isActive }) => (isActive ? "cur" : "")}>카달로그</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_MSA} className={({ isActive }) => (isActive ? "cur" : "")}>자재승인원</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_CNTC} className={({ isActive }) => (isActive ? "cur" : "")}>국세완납증명서</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_MENUAL} className={({ isActive }) => (isActive ? "cur" : "")}>매뉴얼</NavLink></li>
-                            <ul>
-                                <li><NavLink to={URL.SUPPORT_SAM} className={({ isActive }) => (isActive ? "cur" : "")}>유지관리 지침서</NavLink></li>
-                                <li><NavLink to={URL.SUPPORT_INSTALL} className={({ isActive }) => (isActive ? "cur" : "")}>설치도</NavLink></li>
-                                <li><NavLink to={URL.SUPPORT_CD} className={({ isActive }) => (isActive ? "cur" : "")}>결선도</NavLink></li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <h3><Link to={URL.INFORM}>알림마당</Link></h3>
+                    <h3><Link to={URL.INFORM}>자료실</Link></h3>
                     <div className="submenu closed">
                         <ul>
                             <li><NavLink to={URL.INFORM_DAILY}>오늘의 행사</NavLink></li>
-                            <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
+                            {/* <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
                             <li><NavLink to={URL.INFORM_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항</NavLink></li>
-                            <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li>
+                            <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li> */}
+                            <li><NavLink to={URL.INFORM_CATALOG} className={({ isActive }) => (isActive ? "cur" : "")}>카달로그</NavLink></li>
+                            <li><NavLink to={URL.INFORM_MSA} className={({ isActive }) => (isActive ? "cur" : "")}>자재승인원</NavLink></li>
+                            <li><NavLink to={URL.INFORM_CNTC} className={({ isActive }) => (isActive ? "cur" : "")}>국세완납증명서</NavLink></li>
+                            <li><NavLink to={URL.INFORM_MANUAL} className={({ isActive }) => (isActive ? "cur" : "")}>매뉴얼</NavLink>
+                                <ul>
+                                    <li><NavLink to={URL.INFORM_SAM} className={({ isActive }) => (isActive ? "cur" : "")}>유지관리 지침서</NavLink></li>
+                                    <li><NavLink to={URL.INFORM_INSTALL} className={({ isActive }) => (isActive ? "cur" : "")}>설치도</NavLink></li>
+                                    <li><NavLink to={URL.INFORM_CD} className={({ isActive }) => (isActive ? "cur" : "")}>결선도</NavLink></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3><Link to={URL.SUPPORT}>고객센터</Link></h3>
+                    <div className="submenu closed">
+                        <ul>
+                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>견적문의</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>묻고 답하기</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>AS안내</NavLink></li>
                         </ul>
                     </div>
                     <h3><Link to={URL.MALL}>쇼핑몰</Link></h3>

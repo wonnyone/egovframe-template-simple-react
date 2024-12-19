@@ -5,7 +5,7 @@ import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
 import { CD_BBS_ID } from 'config';
 
-import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavSupport';
+import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavInform';
 import EgovPaging from 'components/EgovPaging';
 
 import { itemIdxByPage } from 'utils/calc';
