@@ -476,6 +476,12 @@
     .SERVICE_INTRO .msg ul li::before {top: 8px; width: 4px; height: 4px;}
     .SERVICE_INTRO .msg.second ul {padding: 170px 0 33px 0; background-size: 150px; background-position: center top;}
 
+    /*jht*/
+    .SERVICE_INTRO .pro-img li{float:none; width:100%;}
+    .SERVICE_INTRO .pro-img .txt-box{margin-top:10px;}
+    .SERVICE_INTRO .pro-img .txt-box{font-size:16px;}
+    .SERVICE_INTRO .detali-view{padding:15px 0; border-radius: 28px;}
+
     .TEMPLATE_INTRO .pop_container .btn {width: 100%;}
 
     .ERROR {width: 90%; margin: 50px auto 0;}

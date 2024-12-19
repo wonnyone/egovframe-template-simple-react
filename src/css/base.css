@@ -35,7 +35,8 @@ img {border: 0; vertical-align: top;}
 hr, legend {position: absolute; left: -9999px; top: -9999px;}
 caption {text-indent: -9999px; font-size: 0;}
 li {list-style: none;}
-table {width: 100%; table-layout: fixed; border-collapse: collapse;}
+/*table {width: 100%; table-layout: fixed; border-collapse: collapse;}*/
+table {width: 100%; border-collapse: collapse;}
 a:link, a:visited, a:hover, a:active {text-decoration: none;}
 
 /* Blind 숨김처리 */

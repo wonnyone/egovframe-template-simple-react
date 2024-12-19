@@ -19,6 +19,7 @@ const URL = {
     INTRO                       : "/intro", //정보마당
     INTRO_WORKS                 : "/intro/works", // 정보마당/주요사업소개
     INTRO_SERVICE               : "/intro/service", // 정보마당/주요서비스소개
+    INTRO_WAMETER               : "/intro/wameter", // 정보마당/수도미터
     INTRO_SERVICE1               : "/intro/service1", // 정보마당/주요서비스소개1 추가
     INTRO_SERVICE2               : "/intro/service2", // 정보마당/주요서비스소개2 추가
     INTRO_SERVICE3               : "/intro/service3", // 정보마당/주요서비스소개3 추가
@@ -33,6 +34,35 @@ const URL = {
     SUPPORT_QNA                 : "/support/qna", // 고객지원/묻고답하기
     SUPPORT_QNA_DETAIL          : "/support/qna/detail", // 고객지원/묻고답하기/상세
     SUPPORT_APPLY               : "/support/apply", // 고객지원/서비스신청
+    //jht
+    SUPPORT_CATALOG             : "/support/catalog", // 고객지원/카달로그
+    SUPPORT_CATALOG_DETAIL      : "/support/catalog/detail", // 고객지원/카달로그상세
+    SUPPORT_CATALOG_CREATE      : "/support/catalog/create", // 고객지원/카달로그등록
+    SUPPORT_CATALOG_MODIFY      : "/support/catalog/modify", // 고객지원/카달로그수정
+    SUPPORT_MSA                 : "/support/msa", // 고객지원/자재승인원
+    SUPPORT_MSA_DETAIL          : "/support/msa/detail", // 고객지원/자재승인원상세
+    SUPPORT_MSA_CREATE          : "/support/msa/create", // 고객지원/자재승인원등록
+    SUPPORT_MSA_MODIFY          : "/support/msa/modify", // 고객지원/자재승인원수정
+    SUPPORT_CNTC                : "/support/cntc", // 고객지원/국세완납증명서
+    SUPPORT_CNTC_DETAIL         : "/support/cntc/detail", // 고객지원/국세완납증명서상세
+    SUPPORT_CNTC_CREATE         : "/support/cntc/create", // 고객지원/국세완납증명서등록
+    SUPPORT_CNTC_MODIFY         : "/support/cntc/modify", // 고객지원/국세완납증명서수정
+    SUPPORT_MENUAL              : "/support/menual", // 고객지원/매뉴얼
+    SUPPORT_MENUAL_DETAIL       : "/support/menual/detail", // 고객지원/매뉴얼상세
+    SUPPORT_MENUAL_CREATE       : "/support/menual/create", // 고객지원/매뉴얼등록
+    SUPPORT_MENUAL_MODIFY       : "/support/menual/modify", // 고객지원/매뉴얼수정
+    SUPPORT_SAM                 : "/support/sam", // 고객지원/유지관리지침서
+    SUPPORT_SAM_DETAIL          : "/support/sam/detail", // 고객지원/유지관리지침서상세
+    SUPPORT_SAM_CREATE          : "/support/sam/create", // 고객지원/유지관리지침서등록
+    SUPPORT_SAM_MODIFY          : "/support/sam/modify", // 고객지원/유지관리지침서수정
+    SUPPORT_INSTALL             : "/support/install", // 고객지원/설치도
+    SUPPORT_INSTALL_DETAIL      : "/support/install/detail", // 고객지원/설치도상세
+    SUPPORT_INSTALL_CREATE      : "/support/install/create", // 고객지원/설치도등록
+    SUPPORT_INSTALL_MODIFY      : "/support/install/modify", // 고객지원/설치도수정
+    SUPPORT_CD                  : "/support/cd", // 고객지원/결선도
+    SUPPORT_CD_DETAIL           : "/support/cd/detail", // 고객지원/결선도상세
+    SUPPORT_CD_CREATE           : "/support/cd/create", // 고객지원/결선도등록
+    SUPPORT_CD_MODIFY           : "/support/cd/modify", // 고객지원/결선도수정
     
     //INFORM
     INFORM                      : "/inform", // 알림마당 
