@@ -113,7 +113,7 @@ function EgovCdList(props) {
                 <div className="location">
                     <ul>
                         <li><Link to={URL.MAIN} className="home">Home</Link></li>
-                        <li><Link to={URL.INFORM}>고객지원</Link></li>
+                        <li><Link to={URL.INFORM}>자료실</Link></li>
                         <li>{masterBoard && masterBoard.bbsNm}</li>
                     </ul>
                 </div>
@@ -128,7 +128,7 @@ function EgovCdList(props) {
                         {/* <!-- 본문 --> */}
 
                         <div className="top_tit">
-                            <h1 className="tit_1">고객지원</h1>
+                            <h1 className="tit_1">결선도</h1>
                         </div>
 
                         <h2 className="tit_2">{masterBoard && masterBoard.bbsNm}</h2>

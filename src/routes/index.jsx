@@ -200,6 +200,7 @@ const SecondRoutes = () => {
         {/* INTRO */}
         <Route path={URL.INTRO} element={<Navigate to={URL.INTRO_SERVICE1} />} />
         <Route path={URL.INTRO_WORKS} element={<EgovIntroWork />} />
+        <Route path={URL.INTRO_WAMETER} element={<EgovIntroWameter />} />
         <Route path={URL.INTRO_SERVICE} element={<EgovIntroService />} />
         <Route path={URL.INTRO_SERVICE1} element={<EgovIntroService1 />} />
         <Route path={URL.INTRO_SERVICE2} element={<EgovIntroService2 />} />

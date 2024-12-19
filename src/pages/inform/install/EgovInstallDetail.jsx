@@ -105,7 +105,7 @@ function EgovNoticeDetail(props) {
                         {/* <!-- 본문 --> */}
 
                         <div className="top_tit">
-                            <h1 className="tit_1">알림마당</h1>
+                            <h1 className="tit_1">설치도</h1>
                         </div>
 
                         <h2 className="tit_2">{masterBoard && masterBoard.bbsNm}</h2>
