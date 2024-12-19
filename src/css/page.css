@@ -273,6 +273,19 @@
     .SERVICE_INTRO .tit_5 + .msg {margin-top: 24px;}
     .SERVICE_INTRO .msg + .tit_5 {margin-top: 42px;}
 
+
+    .SERVICE_INTRO .servicelist {margin-top: 24px; border-top: 2px solid #dde2e5; background: #f7f7f7;}
+    .SERVICE_INTRO .servicelist ul {padding-top: 40px;}
+    .SERVICE_INTRO .servicelist ul::after {content: ""; display: block; clear: both;}
+    .SERVICE_INTRO .servicelist ul li {float: left; width: 50%; padding: 0 0 40px 40px;}
+    .SERVICE_INTRO .servicelist ul li > a {display: block;}
+    .SERVICE_INTRO .servicelist ul li > a::after {content: ""; display: block; clear: both;}
+    .SERVICE_INTRO .servicelist ul li > a img {display: block; float: left; width: 90%; margin-right: 20px;}
+    .SERVICE_INTRO .servicelist ul li > a > span {display: block; float: left; width: calc(100% - 180px); padding-right: 10px;}
+    .SERVICE_INTRO .servicelist ul li > a > span strong {display: block; padding-bottom: 8px; color: #222; font-size: 18px; font-weight: 400;}
+    .SERVICE_INTRO .servicelist ul li > a > span span {color: #666; font-size: 16px; font-weight: 300; line-height: 26px;}
+
+
     .TEMPLATE_INTRO .pop_inner {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 1050px;}
     .TEMPLATE_INTRO .pop_container .img {margin-top: 20px;}
     .TEMPLATE_INTRO .pop_container .img img {max-width: 100%;}
