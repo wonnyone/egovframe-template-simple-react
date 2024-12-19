@@ -113,7 +113,7 @@ function EgovCntcList(props) {
                 <div className="location">
                     <ul>
                         <li><Link to={URL.MAIN} className="home">Home</Link></li>
-                        <li><Link to={URL.INFORM}>고객지원</Link></li>
+                        <li><Link to={URL.INFORM}>자료실</Link></li>
                         <li>{masterBoard && masterBoard.bbsNm}</li>
                     </ul>
                 </div>

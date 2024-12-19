@@ -128,7 +128,7 @@ function EgovInstallList(props) {
                         {/* <!-- 본문 --> */}
 
                         <div className="top_tit">
-                            <h1 className="tit_1">고객지원</h1>
+                            <h1 className="tit_1">설치도</h1>
                         </div>
 
                         <h2 className="tit_2">{masterBoard && masterBoard.bbsNm}</h2>
