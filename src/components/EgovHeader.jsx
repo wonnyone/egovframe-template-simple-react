@@ -127,8 +127,8 @@ function EgovHeader() {
                         <h3>제품소개</h3>
                         <ul>
                             {/* <li><NavLink to={URL.INTRO_WORKS} className={({ isActive }) => (isActive ? "cur" : "")}>주요사업 소개</NavLink></li>
-                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li> */}
-                            <li><NavLink to={URL.INTRO_WAMETER} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li>
+                            <li><NavLink to={URL.INTRO_WAMETER} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li> */}
                             <li><NavLink to={URL.INTRO_SERVICE1} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li>
                             <li><NavLink to={URL.INTRO_SERVICE2} className={({ isActive }) => (isActive ? "cur" : "")}>온수미터</NavLink></li>
                             <li><NavLink to={URL.INTRO_SERVICE3} className={({ isActive }) => (isActive ? "cur" : "")}>적산열량계</NavLink></li>
@@ -137,7 +137,7 @@ function EgovHeader() {
                         </ul>
                     </div>
                     <div className="col">
-                        <h3>고객지원</h3>
+                        <h3>고객센터</h3>
                         <ul>
                             <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
                             <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>묻고 답하기</NavLink></li>
@@ -160,14 +160,6 @@ function EgovHeader() {
                             <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
                             <li><NavLink to={URL.INFORM_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항</NavLink></li>
                             <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li>
-                        </ul>
-                    </div>
-                    <div className="col">
-                        <h3>고객센터</h3>
-                        <ul>
-                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>서비스 신청</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>FAQ</NavLink></li>
                         </ul>
                     </div>
                     <div className="col">
@@ -228,8 +220,8 @@ function EgovHeader() {
                     <div className="submenu closed">
                         <ul>
                             {/* <li><NavLink to={URL.INTRO_WORKS} className={({ isActive }) => (isActive ? "cur" : "")}>주요사업 소개</NavLink></li>
-                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li> */}
-                            <li><NavLink to={URL.INTRO_WAMETER} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li>
+                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li> 
+                            <li><NavLink to={URL.INTRO_WAMETER} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li> */}
                             <li><NavLink to={URL.INTRO_SERVICE1} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li>
                             <li><NavLink to={URL.INTRO_SERVICE2} className={({ isActive }) => (isActive ? "cur" : "")}>온수미터</NavLink></li>
                             <li><NavLink to={URL.INTRO_SERVICE3} className={({ isActive }) => (isActive ? "cur" : "")}>적산열량계</NavLink></li>
@@ -237,7 +229,7 @@ function EgovHeader() {
                             <li><NavLink to={URL.INTRO_SERVICE5} className={({ isActive }) => (isActive ? "cur" : "")}>컨버터</NavLink></li>
                         </ul>
                     </div>
-                    <h3><Link to={URL.SUPPORT}>고객지원</Link></h3>
+                    <h3><Link to={URL.SUPPORT}>고객센터</Link></h3>
                     <div className="submenu closed">
                         <ul>
                             <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
@@ -261,14 +253,6 @@ function EgovHeader() {
                             <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
                             <li><NavLink to={URL.INFORM_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항</NavLink></li>
                             <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li>
-                        </ul>
-                    </div>
-                    <h3><Link to={URL.SUPPORT}>고객센터</Link></h3>
-                    <div className="submenu closed">
-                        <ul>
-                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>서비스 신청</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>FAQ</NavLink></li>
                         </ul>
                     </div>
                     <h3><Link to={URL.MALL}>쇼핑몰</Link></h3>

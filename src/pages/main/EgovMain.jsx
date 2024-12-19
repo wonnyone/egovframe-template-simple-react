@@ -214,20 +214,20 @@ function EgovMain(props) {
                 <div className="banner_bot">
                     <div className="b1">
                         <div>
-                            <h2>주요사업 소개</h2>
+                            <h2>회사 소개</h2>
                             <p>표준프레임워크가 제공하는<br />
                                 주요 사업을 소개합니다.</p>
                         </div>
-                        <Link to={URL.INTRO_WORKS}>자세히 보기</Link>
+                        <Link to={URL.ABOUT_SITE}>자세히 보기</Link>
                     </div>
                     <div className="b2">
                         <div>
-                            <h2>대표서비스 소개</h2>
+                            <h2>제품 소개</h2>
                             <p>표준프레임워크 실행환경의<br />
                                 서비스 그룹에서 제공하는<br />
                                 대표서비스입니다.</p>
                         </div>
-                        <Link to={URL.INTRO_SERVICE}>자세히 보기</Link>
+                        <Link to={URL.INTRO_SERVICE1}>자세히 보기</Link>
                     </div>
                     <div className="b3">
                         <div>

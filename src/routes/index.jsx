@@ -201,6 +201,11 @@ const SecondRoutes = () => {
         <Route path={URL.INTRO} element={<Navigate to={URL.INTRO_WORKS} />} />
         <Route path={URL.INTRO_WORKS} element={<EgovIntroWork />} />
         <Route path={URL.INTRO_SERVICE} element={<EgovIntroService />} />
+        <Route path={URL.INTRO_SERVICE1} element={<EgovIntroService1 />} />
+        <Route path={URL.INTRO_SERVICE2} element={<EgovIntroService2 />} />
+        <Route path={URL.INTRO_SERVICE3} element={<EgovIntroService3 />} />
+        <Route path={URL.INTRO_SERVICE4} element={<EgovIntroService4 />} />
+        <Route path={URL.INTRO_SERVICE5} element={<EgovIntroService5 />} />
 
         {/* SUPPORT */}
         <Route path={URL.SUPPORT} element={<Navigate to={URL.SUPPORT_DOWNLOAD} />} />
