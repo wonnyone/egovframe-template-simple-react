@@ -25,14 +25,15 @@ function EgovAboutSite() {
                     <div className="contents SITE_INTRO" id="contents">
                         {/* <!-- 본문 --> */}
 
-                        <h1 className="tit_3">인사말</h1>
+                        <div className="top_tit">
+                            <h1 className="tit_1">회사소개</h1>                            
+                        </div>
 
-                        <p className="txt_1">표준프레임워크 경량환경의 개요와 연혁, 조직소개,<br/>
-                            표준프레임워크센터의 약도 등의 정보를 제공하고 있습니다.</p>
+                        {/* <p className="txt_1">표준프레임워크 경량환경 포털사이트를 소개합니다.</p> */}
                         
-                        <h2 className="tit_4">전자정부표준프레임워크 소개</h2>
+                        <h2 className="tit_2">인사말</h2>
 
-                        <h3 className="tit_5">개요</h3>
+                        {/* <h3 className="tit_5">개요</h3> */}
 
                         <p className="msg_1">저희 엠엑스(주)는 수도미터, 온수미터, 적산 열량계를 제조를 기반으로 고객이 신뢰할 수 있는 
                             계량/계측기의 개발 및 생산에 최선의 노력과 최고의 기술로 최적의 재품을 만들고자 노력하고 있습니다.<br/><br/>
