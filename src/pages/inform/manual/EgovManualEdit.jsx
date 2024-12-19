@@ -146,7 +146,7 @@ function EgovNoticeEdit(props) {
             <div className="location">
                 <ul>
                     <li><Link to={URL.MAIN} className="home">Home</Link></li>
-                    <li><Link to={URL.ADMIN}>사이트관리</Link></li>
+                    <li><Link to={URL.ADMIN}>자료실</Link></li>
                     <li>{masterBoard && masterBoard.bbsNm}</li>
                 </ul>
             </div>

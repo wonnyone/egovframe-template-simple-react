@@ -3,21 +3,21 @@ import { Link, useLocation } from 'react-router-dom';
 
 import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
-import { CNTC_BBS_ID } from 'config';
+import { MANUAL_BBS_ID } from 'config';
 
-import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavSupport';
+import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavInform';
 import EgovPaging from 'components/EgovPaging';
 
 import { itemIdxByPage } from 'utils/calc';
 import { getSessionItem } from 'utils/storage';
 
-function EgovCntcList(props) {
-    console.group("EgovCntcList");
-    console.log("[Start] EgovCntcList ------------------------------");
-    console.log("EgovCntcList [props] : ", props);
+function EgovManualList(props) {
+    console.group("EgovManualList");
+    console.log("[Start] EgovManualList ------------------------------");
+    console.log("EgovManualList [props] : ", props);
 	
     const location = useLocation();
-    console.log("EgovCntcList [location] : ", location);
+    console.log("EgovManualList [location] : ", location);
 
 	const cndRef = useRef();
     const wrdRef = useRef();
@@ -25,7 +25,7 @@ function EgovCntcList(props) {
 	const sessionUser = getSessionItem('loginUser');
 	const sessionUserSe = sessionUser?.userSe;
 	
-    const bbsId = location.state?.bbsId || CNTC_BBS_ID; 
+    const bbsId = location.state?.bbsId || MANUAL_BBS_ID; 
 	
 	// eslint-disable-next-line no-unused-vars
     const [searchCondition, setSearchCondition] = useState(location.state?.searchCondition || { bbsId: bbsId, pageIndex: 1, searchCnd: '0', searchWrd: '' });// 기존 조회에서 접근 했을 시 || 신규로 접근 했을 시
@@ -36,7 +36,7 @@ function EgovCntcList(props) {
     const [listTag, setListTag] = useState([]);
 
     const retrieveList = useCallback((searchCondition) => {
-        console.groupCollapsed("EgovCntcList.retrieveList()");
+        console.groupCollapsed("EgovManualList.retrieveList()");
 
         const retrieveListURL = '/board'+EgovNet.getQueryString(searchCondition);;
         const requestOptions = {
@@ -96,7 +96,7 @@ function EgovCntcList(props) {
                 console.log("err response : ", resp);
             }
         );
-        console.groupEnd("EgovCntcList.retrieveList()");
+        console.groupEnd("EgovManualList.retrieveList()");
     },[]);
 
     useEffect(() => {
@@ -104,8 +104,8 @@ function EgovCntcList(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log("------------------------------EgovCntcList [End]");
-    console.groupEnd("EgovCntcList");
+    console.log("------------------------------EgovManualList [End]");
+    console.groupEnd("EgovManualList");
     return (
         <div className="container">
             <div className="c_wrap">
@@ -113,7 +113,7 @@ function EgovCntcList(props) {
                 <div className="location">
                     <ul>
                         <li><Link to={URL.MAIN} className="home">Home</Link></li>
-                        <li><Link to={URL.INFORM}>고객지원</Link></li>
+                        <li><Link to={URL.INFORM}>자료실</Link></li>
                         <li>{masterBoard && masterBoard.bbsNm}</li>
                     </ul>
                 </div>
@@ -203,4 +203,4 @@ function EgovCntcList(props) {
 }
 
 
-export default EgovCntcList;
+export default EgovManualList;

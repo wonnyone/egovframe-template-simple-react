@@ -90,7 +90,7 @@ function EgovNoticeDetail(props) {
                 <div className="location">
                     <ul>
                         <li><Link to={URL.MAIN} className="home">Home</Link></li>
-                        <li><Link to={URL.INFORM}>알림마당</Link></li>
+                        <li><Link to={URL.INFORM}>자료실</Link></li>
                         <li>{masterBoard && masterBoard.bbsNm}</li>
                     </ul>
                 </div>

@@ -34,35 +34,6 @@ const URL = {
     SUPPORT_QNA                 : "/support/qna", // 고객지원/묻고답하기
     SUPPORT_QNA_DETAIL          : "/support/qna/detail", // 고객지원/묻고답하기/상세
     SUPPORT_APPLY               : "/support/apply", // 고객지원/서비스신청
-    //jht
-    SUPPORT_CATALOG             : "/support/catalog", // 고객지원/카달로그
-    SUPPORT_CATALOG_DETAIL      : "/support/catalog/detail", // 고객지원/카달로그상세
-    SUPPORT_CATALOG_CREATE      : "/support/catalog/create", // 고객지원/카달로그등록
-    SUPPORT_CATALOG_MODIFY      : "/support/catalog/modify", // 고객지원/카달로그수정
-    SUPPORT_MSA                 : "/support/msa", // 고객지원/자재승인원
-    SUPPORT_MSA_DETAIL          : "/support/msa/detail", // 고객지원/자재승인원상세
-    SUPPORT_MSA_CREATE          : "/support/msa/create", // 고객지원/자재승인원등록
-    SUPPORT_MSA_MODIFY          : "/support/msa/modify", // 고객지원/자재승인원수정
-    SUPPORT_CNTC                : "/support/cntc", // 고객지원/국세완납증명서
-    SUPPORT_CNTC_DETAIL         : "/support/cntc/detail", // 고객지원/국세완납증명서상세
-    SUPPORT_CNTC_CREATE         : "/support/cntc/create", // 고객지원/국세완납증명서등록
-    SUPPORT_CNTC_MODIFY         : "/support/cntc/modify", // 고객지원/국세완납증명서수정
-    SUPPORT_MENUAL              : "/support/menual", // 고객지원/매뉴얼
-    SUPPORT_MENUAL_DETAIL       : "/support/menual/detail", // 고객지원/매뉴얼상세
-    SUPPORT_MENUAL_CREATE       : "/support/menual/create", // 고객지원/매뉴얼등록
-    SUPPORT_MENUAL_MODIFY       : "/support/menual/modify", // 고객지원/매뉴얼수정
-    SUPPORT_SAM                 : "/support/sam", // 고객지원/유지관리지침서
-    SUPPORT_SAM_DETAIL          : "/support/sam/detail", // 고객지원/유지관리지침서상세
-    SUPPORT_SAM_CREATE          : "/support/sam/create", // 고객지원/유지관리지침서등록
-    SUPPORT_SAM_MODIFY          : "/support/sam/modify", // 고객지원/유지관리지침서수정
-    SUPPORT_INSTALL             : "/support/install", // 고객지원/설치도
-    SUPPORT_INSTALL_DETAIL      : "/support/install/detail", // 고객지원/설치도상세
-    SUPPORT_INSTALL_CREATE      : "/support/install/create", // 고객지원/설치도등록
-    SUPPORT_INSTALL_MODIFY      : "/support/install/modify", // 고객지원/설치도수정
-    SUPPORT_CD                  : "/support/cd", // 고객지원/결선도
-    SUPPORT_CD_DETAIL           : "/support/cd/detail", // 고객지원/결선도상세
-    SUPPORT_CD_CREATE           : "/support/cd/create", // 고객지원/결선도등록
-    SUPPORT_CD_MODIFY           : "/support/cd/modify", // 고객지원/결선도수정
     
     //INFORM
     INFORM                      : "/inform", // 알림마당 
@@ -80,7 +51,37 @@ const URL = {
     INFORM_GALLERY_CREATE       : "/inform/gallery/create", // 알림마당/사이트갤러리등록
     INFORM_GALLERY_MODIFY       : "/inform/gallery/modify", // 알림마당/사이트갤러리수정
     INFORM_GALLERY_REPLY        : "/inform/gallery/reply", // 알림마당/사이트갤러리답글
-    
+
+    //jht
+    INFORM_CATALOG             : "/inform/catalog", // 자료실/카달로그
+    INFORM_CATALOG_DETAIL      : "/inform/catalog/detail", // 자료실/카달로그상세
+    INFORM_CATALOG_CREATE      : "/inform/catalog/create", // 자료실/카달로그등록
+    INFORM_CATALOG_MODIFY      : "/inform/catalog/modify", // 자료실/카달로그수정
+    INFORM_MSA                 : "/inform/msa", // 자료실/자재승인원
+    INFORM_MSA_DETAIL          : "/inform/msa/detail", // 자료실/자재승인원상세
+    INFORM_MSA_CREATE          : "/inform/msa/create", // 자료실/자재승인원등록
+    INFORM_MSA_MODIFY          : "/inform/msa/modify", // 자료실/자재승인원수정
+    INFORM_CNTC                : "/inform/cntc", // 자료실/국세완납증명서
+    INFORM_CNTC_DETAIL         : "/inform/cntc/detail", // 자료실/국세완납증명서상세
+    INFORM_CNTC_CREATE         : "/inform/cntc/create", // 자료실/국세완납증명서등록
+    INFORM_CNTC_MODIFY         : "/inform/cntc/modify", // 자료실/국세완납증명서수정
+    INFORM_MANUAL              : "/inform/manual", // 자료실/매뉴얼
+    INFORM_MANUAL_DETAIL       : "/inform/manual/detail", // 자료실/매뉴얼상세
+    INFORM_MANUAL_CREATE       : "/inform/manual/create", // 자료실/매뉴얼등록
+    INFORM_MANUAL_MODIFY       : "/inform/manual/modify", // 자료실/매뉴얼수정
+    INFORM_SAM                 : "/inform/sam", // 자료실/유지관리지침서
+    INFORM_SAM_DETAIL          : "/inform/sam/detail", // 자료실/유지관리지침서상세
+    INFORM_SAM_CREATE          : "/inform/sam/create", // 자료실/유지관리지침서등록
+    INFORM_SAM_MODIFY          : "/inform/sam/modify", // 자료실/유지관리지침서수정
+    INFORM_INSTALL             : "/inform/install", // 자료실/설치도
+    INFORM_INSTALL_DETAIL      : "/inform/install/detail", // 자료실/설치도상세
+    INFORM_INSTALL_CREATE      : "/inform/install/create", // 자료실/설치도등록
+    INFORM_INSTALL_MODIFY      : "/inform/install/modify", // 자료실/설치도수정
+    INFORM_CD                  : "/inform/cd", // 자료실/결선도
+    INFORM_CD_DETAIL           : "/inform/cd/detail", // 자료실/결선도상세
+    INFORM_CD_CREATE           : "/inform/cd/create", // 자료실/결선도등록
+    INFORM_CD_MODIFY           : "/inform/cd/modify", // 자료실/결선도수정
+
     //ADMIN
     ADMIN                       : "/admin", // 사이트관리
     ADMIN_SCHEDULE              : "/admin/schedule", // 사이트관리/일정관리

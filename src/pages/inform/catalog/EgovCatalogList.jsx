@@ -3,21 +3,21 @@ import { Link, useLocation } from 'react-router-dom';
 
 import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
-import { SAM_BBS_ID } from 'config';
+import { CATALOG_BBS_ID } from 'config';
 
-import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavSupport';
+import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavInform';
 import EgovPaging from 'components/EgovPaging';
 
 import { itemIdxByPage } from 'utils/calc';
 import { getSessionItem } from 'utils/storage';
 
-function EgovSamList(props) {
-    console.group("EgovSamList");
-    console.log("[Start] EgovSamList ------------------------------");
-    console.log("EgovSamList [props] : ", props);
+function EgovCatalogList(props) {
+    console.group("EgovCatalogList");
+    console.log("[Start] EgovCatalogList ------------------------------");
+    console.log("EgovCatalogList [props] : ", props);
 	
     const location = useLocation();
-    console.log("EgovSamList [location] : ", location);
+    console.log("EgovCatalogList [location] : ", location);
 
 	const cndRef = useRef();
     const wrdRef = useRef();
@@ -25,7 +25,7 @@ function EgovSamList(props) {
 	const sessionUser = getSessionItem('loginUser');
 	const sessionUserSe = sessionUser?.userSe;
 	
-    const bbsId = location.state?.bbsId || SAM_BBS_ID; 
+    const bbsId = location.state?.bbsId || CATALOG_BBS_ID; 
 	
 	// eslint-disable-next-line no-unused-vars
     const [searchCondition, setSearchCondition] = useState(location.state?.searchCondition || { bbsId: bbsId, pageIndex: 1, searchCnd: '0', searchWrd: '' });// 기존 조회에서 접근 했을 시 || 신규로 접근 했을 시
@@ -36,7 +36,7 @@ function EgovSamList(props) {
     const [listTag, setListTag] = useState([]);
 
     const retrieveList = useCallback((searchCondition) => {
-        console.groupCollapsed("EgovSamList.retrieveList()");
+        console.groupCollapsed("EgovCatalogList.retrieveList()");
 
         const retrieveListURL = '/board'+EgovNet.getQueryString(searchCondition);;
         const requestOptions = {
@@ -96,7 +96,7 @@ function EgovSamList(props) {
                 console.log("err response : ", resp);
             }
         );
-        console.groupEnd("EgovSamList.retrieveList()");
+        console.groupEnd("EgovCatalogList.retrieveList()");
     },[]);
 
     useEffect(() => {
@@ -104,8 +104,8 @@ function EgovSamList(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log("------------------------------EgovSamList [End]");
-    console.groupEnd("EgovSamList");
+    console.log("------------------------------EgovCatalogList [End]");
+    console.groupEnd("EgovCatalogList");
     return (
         <div className="container">
             <div className="c_wrap">
@@ -203,4 +203,4 @@ function EgovSamList(props) {
 }
 
 
-export default EgovSamList;
+export default EgovCatalogList;

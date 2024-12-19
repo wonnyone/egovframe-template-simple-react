@@ -5,7 +5,7 @@ import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
 import { INSTALL_BBS_ID } from 'config';
 
-import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavSupport';
+import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavInform';
 import EgovPaging from 'components/EgovPaging';
 
 import { itemIdxByPage } from 'utils/calc';
@@ -113,7 +113,7 @@ function EgovInstallList(props) {
                 <div className="location">
                     <ul>
                         <li><Link to={URL.MAIN} className="home">Home</Link></li>
-                        <li><Link to={URL.INFORM}>고객지원</Link></li>
+                        <li><Link to={URL.INFORM}>자료실</Link></li>
                         <li>{masterBoard && masterBoard.bbsNm}</li>
                     </ul>
                 </div>
