@@ -9,17 +9,22 @@ const URL = {
     ERROR                       : "/error", //로그인
     
     //ABOUT
-    ABOUT                       : "/about", //사이트소개   
-    ABOUT_SITE                  : "/about/site", // 사이트소개/소개
-    ABOUT_HISTORY               : "/about/history", // 사이트소개/연혁
-    ABOUT_ORGANIZATION          : "/about/organization", // 사이트소개/조직소개
-    ABOUT_LOCATION              : "/about/location", // 사이트소개/찾아오시는길
+    ABOUT                       : "/about", //회사소개   
+    ABOUT_SITE                  : "/about/site", // 회사소개/소개
+    ABOUT_LOCATION              : "/about/location", // 회사소개/찾아오시는길
+    ABOUT_ORGANIZATION          : "/about/organization", // 회사소개/인증,특허
+    ABOUT_HISTORY               : "/about/history", // 회사소개/연혁
     
     //INTRO
     INTRO                       : "/intro", //정보마당
     INTRO_WORKS                 : "/intro/works", // 정보마당/주요사업소개
     INTRO_SERVICE               : "/intro/service", // 정보마당/주요서비스소개
     INTRO_WAMETER               : "/intro/wameter", // 정보마당/수도미터
+    INTRO_SERVICE1               : "/intro/service1", // 정보마당/주요서비스소개1 추가
+    INTRO_SERVICE2               : "/intro/service2", // 정보마당/주요서비스소개2 추가
+    INTRO_SERVICE3               : "/intro/service3", // 정보마당/주요서비스소개3 추가
+    INTRO_SERVICE4               : "/intro/service4", // 정보마당/주요서비스소개4 추가
+    INTRO_SERVICE5               : "/intro/service5", // 정보마당/주요서비스소개5 추가
     
     //SUPPORT
     SUPPORT                     : "/support", // 고객지원

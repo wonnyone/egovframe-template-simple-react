@@ -11,7 +11,7 @@ function EgovLeftNavInform() {
     return (
         <div className="nav">
             <div className="inner">
-                <h2>알림마당</h2>
+                <h2>자료실</h2>
                 <ul className="menu4">
                     <li><NavLink to={URL.INFORM_DAILY} className={({ isActive }) => (isActive ? "cur" : "")}>오늘의행사</NavLink></li>
                     <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의행사</NavLink></li>
