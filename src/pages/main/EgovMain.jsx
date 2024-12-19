@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
+import "./slide.scss";
 
 import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
@@ -18,6 +20,57 @@ function EgovMain(props) {
     const [gallaryBoard, setGallaryBoard] = useState();
     const [noticeListTag, setNoticeListTag] = useState();
     const [gallaryListTag, setGallaryListTag] = useState();
+
+    //메인 이미지 슬라이드 시작
+    const slides = [{ 
+        image : "/assets/images/img_main1.png"
+    }, 
+    {
+        image : "/assets/images/img_main2.png"
+    },
+    {
+        image : "/assets/images/img_main3.png"
+    }, 
+    {
+        image : "/assets/images/img_main4.png"
+    },
+    {
+        image : "/assets/images/img_main5.png"
+    },
+    {
+        image : "/assets/images/img_main6.png"
+    },
+    {
+        image : "/assets/images/img_main7.png"
+    },
+    {
+        image : "/assets/images/img_main8.png"
+    }
+    ];
+
+    const [current, setCurrent] = useState(0);
+    const length = slides.length;
+        
+    const nextSlide = () => {
+        setCurrent(current === length - 1 ? 0 : current + 1);
+    };
+    
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length - 1 : current - 1);
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          nextSlide();
+        }, 5000); 
+    
+        return () => clearInterval(interval); // 
+    }, [current, length]);
+    
+    // if (!Array.isArray(slides) || slides.length <= 0) {
+    //      return null;
+    // }
+    //메인 이미지 슬라이드 종료
 
     const retrieveList = useCallback(() => {
         console.groupCollapsed("EgovMain.retrieveList()");
@@ -102,7 +155,22 @@ function EgovMain(props) {
             <div className="c_wrap">
                 <div className="colbox">
                     <div className="left_col">
-                        <img src="/assets/images/img_simple_main.png" alt="단순 홈페이지 전자정부 표준프레임워크의 경량환경 내부업무에 대한 최신 정보와 기술을 제공하고 있습니다." />
+                        {/* <img src="/assets/images/img_simple_main.png" alt="단순 홈페이지 전자정부 표준프레임워크의 경량환경 내부업무에 대한 최신 정보와 기술을 제공하고 있습니다." /> */}
+                        <div className='imageSlider'>
+                        <IoIosArrowBack className='imageSlider-arrow left' size='30' onClick={prevSlide} />
+                        <IoIosArrowForward className='imageSlider-arrow right' size='30' onClick={nextSlide} />
+                        {slides.map((slide, index) => {
+                            return (
+                            <div
+                                className={index === current ? 'slide active' : 'slide'}
+                                key={index}
+                            >
+                                {index === current && <img src={slide.image} className='image' />}
+                            </div>
+                            );
+                        })}
+                        </div>
+
                     </div>
 
                     <div className="right_col">

@@ -20,7 +20,7 @@ function EgovFooter() {
                     </p>
                     <p className="copy">Copyright © 2024 Ministry Of The Interior And Safety. All Rights Reserved.</p>
                 </div>
-                <div className="right_col">
+                {/* <div className="right_col">
                     <Link to="">
                         <img className="w" src="/assets/images/banner_w_01.png" alt="" />
                         <img className="m" src="/assets/images/banner_m_01.png" alt="" />
@@ -29,7 +29,7 @@ function EgovFooter() {
                         <img className="w" src="/assets/images/banner_w_02.png" alt="" />
                         <img className="m" src="/assets/images/banner_m_02.png" alt="" />
                     </Link>
-                </div>
+                </div> */}
             </div>
         </div>
     );
