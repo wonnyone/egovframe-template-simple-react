@@ -18,6 +18,22 @@ export default function initPage() {
             }
         });
 
+        // 웹 mouseenter시, 전체메뉴 열기
+        document.querySelector('.gnb').addEventListener('mouseenter', (e) => {
+            const el = e.target;
+    
+            el.classList.toggle('active');
+    
+            const menu = document.querySelector('.all_menu.WEB');
+            if (menu.matches('.closed')) {
+                menu.classList.remove('closed');
+                el.title = '전체메뉴 닫힘';
+            } else {
+                menu.classList.add('closed');
+                el.title = '전체메뉴 열림';
+            }
+        });
+
         // 모바일 전체메뉴 열기
         document.querySelector('.btnAllMenuM').addEventListener('click', (e) => {
             document.querySelector('.all_menu.Mobile').classList.remove('closed');
