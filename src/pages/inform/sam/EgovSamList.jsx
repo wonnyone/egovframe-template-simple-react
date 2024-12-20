@@ -128,7 +128,7 @@ function EgovSamList(props) {
                         {/* <!-- 본문 --> */}
 
                         <div className="top_tit">
-                            <h1 className="tit_1">유지관리 지침서</h1>
+                            <h1 className="tit_1">자료실</h1>
                         </div>
 
                         <h2 className="tit_2">{masterBoard && masterBoard.bbsNm}</h2>

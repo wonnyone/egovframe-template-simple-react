@@ -10,8 +10,8 @@ function EgovSupportApply() {
                 <div className="location">
                     <ul>
                         <li><a className="home" href="#!">Home</a></li>
-                        <li><a href="#!">고객지원</a></li>
-                        <li>서비스신청</li>
+                        <li><a href="#!">고객센터</a></li>
+                        <li>AS 안내</li>
                     </ul>
                 </div>
                 {/* <!--// Location --> */}
@@ -24,13 +24,15 @@ function EgovSupportApply() {
                     <div className="contents SITE_INTRO" id="contents">
                         {/* <!-- 본문 --> */}
 
-                        <h1 className="tit_6">고객지원</h1>
+                        <div className="top_tit">
+                            <h1 className="tit_1">고객센터</h1>                            
+                        </div>
 
-                        <p className="txt_1">프레임워크 경량환경의 원하시는 서비스를 신청하실 수 있습니다.</p>
+                        {/* <p className="txt_1">표준프레임워크 경량환경 포털사이트를 소개합니다.</p> */}
                         
-                        <h2 className="tit_4">서비스 신청</h2>
+                        <h2 className="tit_2">AS 안내</h2>
 
-                        <h3 className="tit_5">주요 서비스 안내</h3>
+                        {/* <h3 className="tit_5">주요 서비스 안내</h3> */}
 
                         <p className="msg_1">
                             서비스필요시 다음과 같은 절차로 신청하시면 됩니다.<br/><br/>

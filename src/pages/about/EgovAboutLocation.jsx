@@ -26,11 +26,15 @@ function EgovAboutLocation() {
                     <div className="contents SITE_CONTACT_US" id="contents">
                         {/* <!-- 본문 --> */}
 
-                        <h1 className="tit_3">오시는 길</h1>
+                        <div className="top_tit">
+                            <h1 className="tit_1">회사소개</h1>                            
+                        </div>
 
-                        <p className="txt_1">표준프레임워크 경량환경 포털사이트를 소개합니다.</p>
+                        {/* <p className="txt_1">표준프레임워크 경량환경 포털사이트를 소개합니다.</p> */}
+                        
+                        <h2 className="tit_2">오시는 길</h2>
 
-                        <h2 className="tit_4">찾아오시는길</h2>
+                        {/* <h3 className="tit_5">개요</h3> */}
 
                         <div className="map">
                             <a href="https://naver.me/xv3pdTVo" target="_blank" rel="noreferrer">

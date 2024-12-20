@@ -25,18 +25,15 @@ function EgovIntroService3() {
                 <div className="contents SERVICE_INTRO" id="contents">
                     {/* <!-- 본문 --> */}
 
-                    <h1 className="tit_3">적산열량계</h1>
+                    <div className="top_tit">
+                        <h1 className="tit_1">제품소개</h1>                            
+                    </div>
 
-                    <p className="txt_1">대표제품의 소개와 대표서비스의 소개를 보실 수 있는 페이지입니다.</p>
+                    {/* <p className="txt_1">표준프레임워크 경량환경 포털사이트를 소개합니다.</p> */}
                     
-                    <h2 className="tit_4">대표서비스 소개</h2>
+                    <h2 className="tit_2">적산열량계</h2>
 
-                    <p className="txt_1">
-                        전자정부 표준 프레임워크 실행환경은 5개 서비스 그룹으로 구성되며 34개 서비스를 제공한다.<br/>
-                        실행환경 서비스 구조는 아래 그림과 같다.
-                    </p>
-
-                    {/* <h3 className="tit_5">화면처리</h3> */}
+                    {/* <h3 className="tit_5">개요</h3> */}
 
                     <div className="servicelist">
                         <ul>

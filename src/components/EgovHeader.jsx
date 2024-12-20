@@ -63,8 +63,8 @@ function EgovHeader() {
                 <Link to={URL.MAIN} className="ico lnk_go_template" target="_blank">홈페이지 템플릿 소개 페이지로 이동</Link>
 
                 <h1 className="logo">
-                    <Link to={URL.MAIN} className="w"><img src="/assets/images/logo_w.png" alt="표준프레임워크포털 eGovFrame 심플홈페이지" /></Link>
-                    <Link to={URL.MAIN} className="m"><img src="/assets/images/logo_m.png" alt="표준프레임워크포털 eGovFrame 심플홈페이지" /></Link>
+                    <Link to={URL.MAIN} className="w"><img src="/assets/images/logo_w.png" alt="홈페이지 로고" /></Link>
+                    <Link to={URL.MAIN} className="m"><img src="/assets/images/logo_m.png" alt="홈페이지 로고" /></Link>
                 </h1>
 
                 <div className="gnb">
@@ -221,7 +221,7 @@ function EgovHeader() {
                     <div className="submenu closed">
                         <ul>
                             {/* <li><NavLink to={URL.INTRO_WORKS} className={({ isActive }) => (isActive ? "cur" : "")}>주요사업 소개</NavLink></li>
-                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li> 
+                            <li><NavLink to={URL.INTRO_SERVICE} className={({ isActive }) => (isActive ? "cur" : "")}>대표서비스 소개</NavLink></li>
                             <li><NavLink to={URL.INTRO_WAMETER} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li> */}
                             <li><NavLink to={URL.INTRO_SERVICE1} className={({ isActive }) => (isActive ? "cur" : "")}>수도미터</NavLink></li>
                             <li><NavLink to={URL.INTRO_SERVICE2} className={({ isActive }) => (isActive ? "cur" : "")}>온수미터</NavLink></li>

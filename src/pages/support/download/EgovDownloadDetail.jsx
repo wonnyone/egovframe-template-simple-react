@@ -12,8 +12,8 @@ function EgovDownloadDetail() {
                 <div className="location">
                     <ul>
                         <li><Link to="" className="home">Home</Link></li>
-                        <li><Link to="">고객지원</Link></li>
-                        <li>소개</li>
+                        <li><Link to="">고객센터</Link></li>
+                        <li>견적문의</li>
                     </ul>
                 </div>
                 {/* <!--// Location --> */}
@@ -27,10 +27,10 @@ function EgovDownloadDetail() {
                         {/* <!-- 본문 --> */}
 
                         <div className="top_tit">
-                            <h1 className="tit_1">고객지원</h1>                            
+                            <h1 className="tit_1">고객센터</h1>                            
                         </div>
                         
-                        <h2 className="tit_2">자료실</h2>
+                        <h2 className="tit_2">견적문의</h2>
 
                         {/* <!-- 상세 --> */}
                         <div className="board_view3">
