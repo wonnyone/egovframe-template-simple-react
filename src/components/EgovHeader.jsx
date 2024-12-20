@@ -60,7 +60,7 @@ function EgovHeader() {
         // <!-- header -->
         <div className="header">
             <div className="inner">
-                <Link to={URL.MAIN} className="ico lnk_go_template" target="_blank">홈페이지 템플릿 소개 페이지로 이동</Link>
+                {/* <Link to={URL.MAIN} className="ico lnk_go_template" target="_blank">홈페이지 템플릿 소개 페이지로 이동</Link> */}
 
                 <h1 className="logo">
                     <Link to={URL.MAIN} className="w"><img src="/assets/images/logo_w.png" alt="홈페이지 로고" /></Link>

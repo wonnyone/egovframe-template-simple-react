@@ -54,14 +54,14 @@ function EgovAboutLocation() {
                                     <dd>22839 인천광역시 서구 가좌동 564-10, 다동 9호 엠엑스(주)</dd>
                                 </dl>
                             </div>
-                            <div className="right_col">
+                            {/* <div className="right_col">
                                 <h3>QR코드로 위치알아보기</h3>
                                 <p>스마트폰에서 QR코드<br />
                                     리더를 이용해 사진·<br />
                                     지도 등 다양한 정보를<br />
                                     확인하세요.</p>
                                 <img className="qr" src="/assets/images/qrcode.png" alt="qr code" />
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="way">
