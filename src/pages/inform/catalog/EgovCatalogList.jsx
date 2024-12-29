@@ -67,7 +67,7 @@ function EgovCatalogList(props) {
 
                     mutListTag.push(
                         <Link
-                            to={{pathname: URL.INFORM_NOTICE_DETAIL}}
+                            to={{pathname: URL.INFORM_CATALOG_DETAIL}}
                             state={{
                                 nttId: item.nttId,
                                 bbsId: item.bbsId,
