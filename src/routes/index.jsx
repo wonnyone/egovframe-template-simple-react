@@ -270,7 +270,7 @@ const SecondRoutes = () => {
         <Route path={URL.INFORM_CD_MODIFY} element={<EgovCdEdit mode={CODE.MODE_MODIFY} />} />
 
         {/* ADMIN */}
-        <Route path={URL.ADMIN} element={<Navigate to={URL.ADMIN_SCHEDULE} />} />
+        <Route path={URL.ADMIN} element={<Navigate to={URL.ADMIN_BOARD} />} />
         <Route path={URL.ADMIN_SCHEDULE} element={<EgovAdminScheduleList />} />
         <Route path={URL.ADMIN_SCHEDULE_DETAIL} element={<EgovAdminScheduleDetail />} />
         <Route path={URL.ADMIN_SCHEDULE_CREATE} element={<EgovAdminScheduleEdit mode={CODE.MODE_CREATE} />} />
