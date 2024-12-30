@@ -94,12 +94,12 @@ function EgovHeader() {
                         </>
                     }
                     {/* 로그인 : 로그인 정보 없을 때 */}
-                    {!sessionUserId &&
+                    {/* {!sessionUserId &&
                         <>
                         <button onClick={logInHandler} className="btn login">로그인</button>
                         <NavLink to={URL.MYPAGE_CREATE} className={({ isActive }) => (isActive ? "btn login cur" : "btn login")}>회원가입</NavLink>
                         </>
-                    }
+                    } */}
                 </div>
                 {/* <!--// PC web에서 보여지는 영역 --> */}
 
@@ -200,12 +200,12 @@ function EgovHeader() {
                     }
 
                     {/* 로그인 : 로그인 정보 없을 때 */}
-                    {!sessionUserId &&
+                    {/* {!sessionUserId &&
                         <>
                         <button onClick={logInHandler} className="btn login">로그인</button>
                         <NavLink to={URL.MYPAGE_CREATE} className={({ isActive }) => (isActive ? "btn login cur" : "btn login")}>회원가입</NavLink>
                         </>
-                    }
+                    } */}
                     <button className="btn noscript close" type="button">전체메뉴 닫기</button>
                 </div>
                 <div className="menu">
