@@ -233,8 +233,8 @@ function EgovHeader() {
                     <h3><Link to={URL.INFORM}>자료실</Link></h3>
                     <div className="submenu closed">
                         <ul>
-                            <li><NavLink to={URL.INFORM_DAILY}>오늘의 행사</NavLink></li>
-                            {/* <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
+                            {/* <li><NavLink to={URL.INFORM_DAILY}>오늘의 행사</NavLink></li>
+                            <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
                             <li><NavLink to={URL.INFORM_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항</NavLink></li>
                             <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li> */}
                             <li><NavLink to={URL.INFORM_CATALOG} className={({ isActive }) => (isActive ? "cur" : "")}>카달로그</NavLink></li>

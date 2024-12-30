@@ -221,7 +221,7 @@ const SecondRoutes = () => {
         <Route path={URL.SUPPORT_APPLY} element={<EgovSupportApply />} />
                 
         {/* INFORM */}
-        <Route path={URL.INFORM} element={<Navigate to={URL.INFORM_DAILY} />} />
+        <Route path={URL.INFORM} element={<Navigate to={URL.INFORM_CATALOG} />} />
 
         <Route path={URL.INFORM_DAILY} element={<EgovDailyList />} />
         <Route path={URL.INFORM_DAILY_DETAIL} element={<EgovDailyDetail />} />
