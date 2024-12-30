@@ -20,7 +20,8 @@ function EgovLeftNavInform() {
                     <li><NavLink to={URL.INFORM_CATALOG} className={({ isActive }) => (isActive ? "cur" : "")}>카달로그</NavLink></li>
                     <li><NavLink to={URL.INFORM_MSA} className={({ isActive }) => (isActive ? "cur" : "")}>자재승인원</NavLink></li>
                     <li><NavLink to={URL.INFORM_CNTC} className={({ isActive }) => (isActive ? "cur" : "")}>국세완납증명서</NavLink></li>
-                    <li><NavLink to={URL.INFORM_MANUAL} className={({ isActive }) => (isActive ? "cur" : "")}>메뉴얼</NavLink>
+                    {/*<li><NavLink to={URL.INFORM_MANUAL} className={({ isActive }) => (isActive ? "cur" : "")}>매뉴얼</NavLink> */}
+                    <li>매뉴얼
                         <ul>
                             <li><NavLink to={URL.INFORM_SAM} className={({ isActive }) => (isActive ? "cur" : "")}>유지관리 지침서</NavLink></li>
                             <li><NavLink to={URL.INFORM_INSTALL} className={({ isActive }) => (isActive ? "cur" : "")}>설치도</NavLink></li>
