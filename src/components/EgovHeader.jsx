@@ -94,12 +94,12 @@ function EgovHeader() {
                         </>
                     }
                     {/* 로그인 : 로그인 정보 없을 때 */}
-                    {!sessionUserId &&
+                    {/* {!sessionUserId &&
                         <>
                         <button onClick={logInHandler} className="btn login">로그인</button>
                         <NavLink to={URL.MYPAGE_CREATE} className={({ isActive }) => (isActive ? "btn login cur" : "btn login")}>회원가입</NavLink>
                         </>
-                    }
+                    } */}
                 </div>
                 {/* <!--// PC web에서 보여지는 영역 --> */}
 
@@ -200,12 +200,12 @@ function EgovHeader() {
                     }
 
                     {/* 로그인 : 로그인 정보 없을 때 */}
-                    {!sessionUserId &&
+                    {/* {!sessionUserId &&
                         <>
                         <button onClick={logInHandler} className="btn login">로그인</button>
                         <NavLink to={URL.MYPAGE_CREATE} className={({ isActive }) => (isActive ? "btn login cur" : "btn login")}>회원가입</NavLink>
                         </>
-                    }
+                    } */}
                     <button className="btn noscript close" type="button">전체메뉴 닫기</button>
                 </div>
                 <div className="menu">
@@ -234,8 +234,8 @@ function EgovHeader() {
                     <h3><Link to={URL.INFORM_CATALOG}>자료실</Link></h3>
                     <div className="submenu closed">
                         <ul>
-                            <li><NavLink to={URL.INFORM_DAILY}>오늘의 행사</NavLink></li>
-                            {/* <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
+                            {/* <li><NavLink to={URL.INFORM_DAILY}>오늘의 행사</NavLink></li>
+                            <li><NavLink to={URL.INFORM_WEEKLY} className={({ isActive }) => (isActive ? "cur" : "")}>금주의 행사</NavLink></li>
                             <li><NavLink to={URL.INFORM_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항</NavLink></li>
                             <li><NavLink to={URL.INFORM_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트 갤러리</NavLink></li> */}
                             <li><NavLink to={URL.INFORM_CATALOG} className={({ isActive }) => (isActive ? "cur" : "")}>카달로그</NavLink></li>
