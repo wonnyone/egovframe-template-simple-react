@@ -82,6 +82,11 @@ const URL = {
     INFORM_CD_CREATE           : "/inform/cd/create", // 자료실/결선도등록
     INFORM_CD_MODIFY           : "/inform/cd/modify", // 자료실/결선도수정
 
+    //MALL
+    MALL_MX                     : "https://www.mxmall.com",   //MX 쇼핑몰
+    MALL_NV                     : "https://www.naver.com",   //네이버 쇼핑몰
+    MALL_CP                     : "https://www.coupang.com",   //쿠팡 쇼핑몰
+
     //ADMIN
     ADMIN                       : "/admin", // 사이트관리
     ADMIN_SCHEDULE              : "/admin/schedule", // 사이트관리/일정관리
