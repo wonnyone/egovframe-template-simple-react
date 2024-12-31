@@ -11,7 +11,9 @@
 
 .imageSlider {
     width: 600px;
-    height: 600px;
+    // height: 600px;
+    max-width: 99%;
+    max-height: 99%;
     position: relative;
     overflow: hidden;
     margin-bottom: 20px;
@@ -20,7 +22,8 @@
 
 .imageSlider-arrow {
     position: absolute;
-    top: 300px;
+    // top: 300px;
+    top: 50%;
     background-color: rgba(141, 141, 141, 0.5);
     cursor: pointer;
     border-radius: 5px;
@@ -30,7 +33,8 @@
       margin-left: 25px;
     }
     &.right {
-      left: 550px;
+      // left: 550px;
+      left: 90%;
       margin-right: 25px;
     }
 }
