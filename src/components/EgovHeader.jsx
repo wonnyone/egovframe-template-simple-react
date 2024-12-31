@@ -167,9 +167,9 @@ function EgovHeader() {
                     <div className="col">
                         <h3>쇼핑몰</h3>
                         <ul>
-                            <li><a href={'https://www.mxmall.com'} target='_blank' rel='noopener noreferrer'>MX 쇼핑몰</a></li>
-                            <li><a href={'https://www.naver.com'} target='_blank' rel='noopener noreferrer'>네이버 쇼핑몰</a></li>
-                            <li><a href={'https://www.coupang.com'} target='_blank' rel='noopener noreferrer'>쿠팡 쇼핑몰</a></li>
+                            <li><a href={URL.MALL_MX} target='_blank' rel='noopener noreferrer' className={({ isActive }) => (isActive ? "cur" : "")}>MX 쇼핑몰</a></li>
+                            <li><a href={URL.MALL_NV} target='_blank' rel='noopener noreferrer' className={({ isActive }) => (isActive ? "cur" : "")}>네이버 쇼핑몰</a></li>
+                            <li><a href={URL.MALL_CP} target='_blank' rel='noopener noreferrer' className={({ isActive }) => (isActive ? "cur" : "")}>쿠팡 쇼핑몰</a></li>
                         </ul>
                     </div>
                     {sessionUserSe ==='ADM' &&
@@ -262,9 +262,9 @@ function EgovHeader() {
                     <h3><Link to={URL.MALL}>쇼핑몰</Link></h3>
                     <div className="submenu closed">
                         <ul>
-                            <li><a href={'https://www.mxmall.com'} target='_blank' rel='noopener noreferrer'>MX 쇼핑몰</a></li>
-                            <li><a href={'https://www.naver.com'} target='_blank' rel='noopener noreferrer'>네이버 쇼핑몰</a></li>
-                            <li><a href={'https://www.coupang.com'} target='_blank' rel='noopener noreferrer'>쿠팡 쇼핑몰</a></li>
+                            <li><a href={URL.MALL_MX} target='_blank' rel='noopener noreferrer' className={({ isActive }) => (isActive ? "cur" : "")}>MX 쇼핑몰</a></li>
+                            <li><a href={URL.MALL_NV} target='_blank' rel='noopener noreferrer' className={({ isActive }) => (isActive ? "cur" : "")}>네이버 쇼핑몰</a></li>
+                            <li><a href={URL.MALL_CP} target='_blank' rel='noopener noreferrer' className={({ isActive }) => (isActive ? "cur" : "")}>쿠팡 쇼핑몰</a></li>
                         </ul>
                     </div>
                     {sessionUserSe ==='ADM' &&
