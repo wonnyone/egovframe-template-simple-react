@@ -67,7 +67,7 @@ function EgovMsaList(props) {
 
                     mutListTag.push(
                         <Link
-                            to={{pathname: URL.INFORM_NOTICE_DETAIL}}
+                            to={{pathname: URL.INFORM_MSA_DETAIL}}
                             state={{
                                 nttId: item.nttId,
                                 bbsId: item.bbsId,
@@ -164,7 +164,7 @@ function EgovMsaList(props) {
                                 </li>{/* user.id 대신 권한그룹 세션값 사용 */}
                                 {user && sessionUserSe ==='ADM' && masterBoard.bbsUseFlag === 'Y' &&
                                     <li>
-                                        <Link to={URL.INFORM_NOTICE_CREATE} state={{bbsId: bbsId}} className="btn btn_blue_h46 pd35">등록</Link>
+                                        <Link to={URL.INFORM_MSA_CREATE} state={{bbsId: bbsId}} className="btn btn_blue_h46 pd35">등록</Link>
                                     </li>
                                 }
                             </ul>

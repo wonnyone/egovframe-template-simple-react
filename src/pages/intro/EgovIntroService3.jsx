@@ -84,6 +84,85 @@ function EgovIntroService3() {
                         </ul>
                     </div>
 
+                    <div class="pro-section section02">
+                        <div class="pro-sub-tit">
+                            <p>Specification</p>
+                            <h5>제품사양</h5>
+                        </div>
+                        <div class="table-container">
+                            <table class="spec-table">
+                                <tbody>
+                                    <tr>
+                                        <th>규격<br/>(mm)</th>
+                                        <th>모델명</th>
+                                        <th>과부하 유량<br/>Qs [m3/h]</th>
+                                        <th>최대유량<br/>Qp [m3/h]</th>
+                                        <th>최소유량<br/>Qi [m3/h]</th>
+                                        <th>전체길이<br/>L [mm]</th>
+                                        <th>접속부나사<br/>D [inch]</th>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>CM-15</td>
+                                        <td>3</td>
+                                        <td>1.5</td>
+                                        <td>0.06</td>
+                                        <td>110</td>
+                                        <td>G 3/4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>CM-20</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>0.08</td>
+                                        <td>130</td>
+                                        <td>G 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>CM-25</td>
+                                        <td>5</td>
+                                        <td>2.5</td>
+                                        <td>0.1</td>
+                                        <td>130</td>
+                                        <td>G1 1/4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>CM-32</td>
+                                        <td>6</td>
+                                        <td>3</td>
+                                        <td>0.12</td>
+                                        <td>180</td>
+                                        <td>G1 1/2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>CM-40</td>
+                                        <td>14</td>
+                                        <td>7</td>
+                                        <td>0.28</td>
+                                        <td>200</td>
+                                        <td>G 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>CM-50</td>
+                                        <td>16</td>
+                                        <td>8</td>
+                                        <td>0.32</td>
+                                        <td>200</td>
+                                        <td>70-11</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    {/* 카달로그다운 --> */}   
+                    {/*listDownTag */}
+
                     {/* <!--// 본문 --> */}
                 </div>
             </div>

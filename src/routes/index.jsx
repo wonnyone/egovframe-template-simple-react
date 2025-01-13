@@ -26,10 +26,14 @@ import EgovIntroWork from 'pages/intro/EgovIntroWork';
 import EgovIntroService from 'pages/intro/EgovIntroService';
 import EgovIntroWameter from 'pages/intro/EgovIntroWameter';
 import EgovIntroService1 from 'pages/intro/EgovIntroService1';
+import EgovIntroService1List from 'pages/intro/EgovIntroService1List';
+import EgovIntroService1Detail from 'pages/intro/EgovIntroService1Detail';
+import EgovIntroService1Edit from 'pages/intro/EgovIntroService1Edit';
 import EgovIntroService2 from 'pages/intro/EgovIntroService2';
 import EgovIntroService3 from 'pages/intro/EgovIntroService3';
 import EgovIntroService4 from 'pages/intro/EgovIntroService4';
 import EgovIntroService5 from 'pages/intro/EgovIntroService5';
+import EgovIntroService6 from 'pages/intro/EgovIntroService6';
 
 //SUPPORT
 import EgovSupportDownloadList from 'pages/support/download/EgovDownloadList';
@@ -38,6 +42,15 @@ import EgovSupportDownloadCreate from 'pages/support/download/EgovDownloadCreate
 import EgovSupportQnaList from 'pages/support/qna/EgovQnaList';
 import EgovSupportQnaDetail from 'pages/support/qna/EgovQnaDetail';
 import EgovSupportApply from 'pages/support/apply/EgovSupportApply';
+
+import EgovSupportCenter1 from 'pages/support/center/EgovSupportCenter1';
+import EgovSupportCenter1List from 'pages/support/center/EgovSupportCenter1List';
+import EgovSupportCenter1Detail from 'pages/support/center/EgovSupportCenter1Detail';
+import EgovSupportCenter1Edit from 'pages/support/center/EgovSupportCenter1Edit';
+import EgovSupportCenter2 from 'pages/support/center/EgovSupportCenter2';
+import EgovSupportCenter3 from 'pages/support/center/EgovSupportCenter3';
+import EgovSupportCenter4 from 'pages/support/center/EgovSupportCenter4';
+
 //jht
 import EgovCatalogList from 'pages/inform/catalog/EgovCatalogList';
 import EgovCatalogDetail from 'pages/inform/catalog/EgovCatalogDetail';
@@ -73,6 +86,9 @@ import EgovNoticeEdit from 'pages/inform/notice/EgovNoticeEdit';
 import EgovGalleryList from 'pages/inform/gallery/EgovGalleryList';
 import EgovGalleryDetail from 'pages/inform/gallery/EgovGalleryDetail';
 import EgovGalleryEdit from 'pages/inform/gallery/EgovGalleryEdit';
+
+//mall
+import EgovMall from 'pages/mall/EgovMall';
 
 //ADMIN
 import EgovAdminScheduleList from 'pages/admin/schedule/EgovAdminScheduleList';
@@ -203,22 +219,33 @@ const SecondRoutes = () => {
         <Route path={URL.INTRO_WAMETER} element={<EgovIntroWameter />} />
         <Route path={URL.INTRO_SERVICE} element={<EgovIntroService />} />
         <Route path={URL.INTRO_SERVICE1} element={<EgovIntroService1 />} />
+        <Route path={URL.INTRO_SERVICE1_LIST} element={<EgovIntroService1List />} />
+        <Route path={URL.INTRO_SERVICE1_DETAIL} element={<EgovIntroService1Detail />} />
+        <Route path={URL.INTRO_SERVICE1_CREATE} element={<EgovIntroService1Edit mode={CODE.MODE_CREATE} />} />
+        <Route path={URL.INTRO_SERVICE1_MODIFY} element={<EgovIntroService1Edit mode={CODE.MODE_MODIFY} />} />
         <Route path={URL.INTRO_SERVICE2} element={<EgovIntroService2 />} />
         <Route path={URL.INTRO_SERVICE3} element={<EgovIntroService3 />} />
         <Route path={URL.INTRO_SERVICE4} element={<EgovIntroService4 />} />
         <Route path={URL.INTRO_SERVICE5} element={<EgovIntroService5 />} />
+        <Route path={URL.INTRO_SERVICE6} element={<EgovIntroService6 />} />
 
         {/* SUPPORT */}
         <Route path={URL.SUPPORT} element={<Navigate to={URL.SUPPORT_DOWNLOAD} />} />
-
         <Route path={URL.SUPPORT_DOWNLOAD} element={<EgovSupportDownloadList />} />
         <Route path={URL.SUPPORT_DOWNLOAD_DETAIL} element={<EgovSupportDownloadDetail />} />
         <Route path={URL.SUPPORT_DOWNLOAD_CREATE} element={<EgovSupportDownloadCreate />} />
-
         <Route path={URL.SUPPORT_QNA} element={<EgovSupportQnaList />} />
         <Route path={URL.SUPPORT_QNA_DETAIL} element={<EgovSupportQnaDetail />} />
-
         <Route path={URL.SUPPORT_APPLY} element={<EgovSupportApply />} />
+
+        <Route path={URL.SUPPORT_CENTER1} element={<EgovSupportCenter1 />} />
+        <Route path={URL.SUPPORT_CENTER1_LIST} element={<EgovSupportCenter1List />} />
+        <Route path={URL.SUPPORT_CENTER1_DETAIL} element={<EgovSupportCenter1Detail />} />
+        <Route path={URL.SUPPORT_CENTER1_CREATE} element={<EgovSupportCenter1Edit mode={CODE.MODE_CREATE} />} />
+        <Route path={URL.SUPPORT_CENTER1_MODIFY} element={<EgovSupportCenter1Edit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.SUPPORT_CENTER2} element={<EgovSupportCenter2 />} />
+        <Route path={URL.SUPPORT_CENTER3} element={<EgovSupportCenter3 />} />
+        <Route path={URL.SUPPORT_CENTER4} element={<EgovSupportCenter4 />} />        
                 
         {/* INFORM */}
         <Route path={URL.INFORM} element={<Navigate to={URL.INFORM_CATALOG} />} />
@@ -244,30 +271,40 @@ const SecondRoutes = () => {
         <Route path={URL.INFORM_CATALOG_DETAIL} element={<EgovCatalogDetail />} />
         <Route path={URL.INFORM_CATALOG_CREATE} element={<EgovCatalogEdit mode={CODE.MODE_CREATE} />} />
         <Route path={URL.INFORM_CATALOG_MODIFY} element={<EgovCatalogEdit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.INFORM_CATALOG_REPLY} element={<EgovCatalogEdit mode={CODE.MODE_REPLY} />} />
         <Route path={URL.INFORM_MSA} element={<EgovMsaList />} />
         <Route path={URL.INFORM_MSA_DETAIL} element={<EgovMsaDetail />} />
         <Route path={URL.INFORM_MSA_CREATE} element={<EgovMsaEdit mode={CODE.MODE_CREATE} />} />
         <Route path={URL.INFORM_MSA_MODIFY} element={<EgovMsaEdit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.INFORM_MSA_REPLY} element={<EgovMsaEdit mode={CODE.MODE_REPLY} />} />
         <Route path={URL.INFORM_CNTC} element={<EgovCntcList />} />
         <Route path={URL.INFORM_CNTC_DETAIL} element={<EgovCntcDetail />} />
         <Route path={URL.INFORM_CNTC_CREATE} element={<EgovCntcEdit mode={CODE.MODE_CREATE} />} />
         <Route path={URL.INFORM_CNTC_MODIFY} element={<EgovCntcEdit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.INFORM_CNTC_REPLY} element={<EgovCntcEdit mode={CODE.MODE_REPLY} />} />
         <Route path={URL.INFORM_MANUAL} element={<EgovManualList />} />
         <Route path={URL.INFORM_MANUAL_DETAIL} element={<EgovManualDetail />} />
         <Route path={URL.INFORM_MANUAL_CREATE} element={<EgovManualEdit mode={CODE.MODE_CREATE} />} />
         <Route path={URL.INFORM_MANUAL_MODIFY} element={<EgovManualEdit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.INFORM_MANUAL_REPLY} element={<EgovManualEdit mode={CODE.MODE_REPLY} />} />
         <Route path={URL.INFORM_SAM} element={<EgovSamList />} />
         <Route path={URL.INFORM_SAM_DETAIL} element={<EgovSamDetail />} />
         <Route path={URL.INFORM_SAM_CREATE} element={<EgovSamEdit mode={CODE.MODE_CREATE} />} />
         <Route path={URL.INFORM_SAM_MODIFY} element={<EgovSamEdit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.INFORM_SAM_REPLY} element={<EgovSamEdit mode={CODE.MODE_REPLY} />} />
         <Route path={URL.INFORM_INSTALL} element={<EgovInstallList />} />
         <Route path={URL.INFORM_INSTALL_DETAIL} element={<EgovInstallDetail />} />
         <Route path={URL.INFORM_INSTALL_CREATE} element={<EgovInstallEdit mode={CODE.MODE_CREATE} />} />
         <Route path={URL.INFORM_INSTALL_MODIFY} element={<EgovInstallEdit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.INFORM_INSTALL_REPLY} element={<EgovInstallEdit mode={CODE.MODE_REPLY} />} />
         <Route path={URL.INFORM_CD} element={<EgovCdList />} />
         <Route path={URL.INFORM_CD_DETAIL} element={<EgovCdDetail />} />
         <Route path={URL.INFORM_CD_CREATE} element={<EgovCdEdit mode={CODE.MODE_CREATE} />} />
         <Route path={URL.INFORM_CD_MODIFY} element={<EgovCdEdit mode={CODE.MODE_MODIFY} />} />
+        <Route path={URL.INFORM_CD_REPLY} element={<EgovCdEdit mode={CODE.MODE_REPLY} />} />
+
+        {/* ADMIN */}
+        <Route path={URL.MALL} element={<EgovMall />} />
 
         {/* ADMIN */}
         <Route path={URL.ADMIN} element={<Navigate to={URL.ADMIN_BOARD} />} />
@@ -296,14 +333,14 @@ const SecondRoutes = () => {
         <Route path={URL.ADMIN_GALLERY_MODIFY} element={<EgovAdminGalleryEdit mode={CODE.MODE_MODIFY} />} />
         <Route path={URL.ADMIN_GALLERY_REPLY} element={<EgovAdminGalleryEdit mode={CODE.MODE_REPLY} />} />
         {/* 사이트관리자 암호 바꾸기 기능 */}
-		<Route path={URL.ADMIN_MANAGER} element={<EgovAdminPasswordUpdate />} />
-		{/* 회원관리 기능 */}
-		<Route path={URL.ADMIN_MEMBERS} element={<EgovAdminMemberList />} />
-		<Route path={URL.ADMIN_MEMBERS_CREATE} element={<EgovAdminMemberEdit mode={CODE.MODE_CREATE} />} />
-		<Route path={URL.ADMIN_MEMBERS_MODIFY} element={<EgovAdminMemberEdit mode={CODE.MODE_MODIFY} />} />
-		{/* MYPAGE */}
+        <Route path={URL.ADMIN_MANAGER} element={<EgovAdminPasswordUpdate />} />
+        {/* 회원관리 기능 */}
+        <Route path={URL.ADMIN_MEMBERS} element={<EgovAdminMemberList />} />
+        <Route path={URL.ADMIN_MEMBERS_CREATE} element={<EgovAdminMemberEdit mode={CODE.MODE_CREATE} />} />
+        <Route path={URL.ADMIN_MEMBERS_MODIFY} element={<EgovAdminMemberEdit mode={CODE.MODE_MODIFY} />} />
+        {/* MYPAGE */}
         <Route path={URL.MYPAGE_CREATE} element={<EgovMypageEdit mode={CODE.MODE_CREATE} />} />
-		<Route path={URL.MYPAGE_MODIFY} element={<EgovMypageEdit mode={CODE.MODE_MODIFY} />} />
+		    <Route path={URL.MYPAGE_MODIFY} element={<EgovMypageEdit mode={CODE.MODE_MODIFY} />} />
       </Routes>
       <EgovFooter />
       <EgovInfoPopup />

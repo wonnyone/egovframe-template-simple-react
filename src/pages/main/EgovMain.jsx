@@ -199,13 +199,13 @@ function EgovMain(props) {
                         </div>
 
                         <div className="banner">
-                            <Link to={URL.SUPPORT_DOWNLOAD} className="bn1">
+                            <Link to={URL.INFORM_CATALOG} className="bn1">
                                 <strong>자료실</strong>
                                 <span>다양한 자료를<br />다운로드 받으실 수 있습니다.</span>
                             </Link>
-                            <Link to={URL.ABOUT} className="bn2">
-                                <strong>표준프레임워크센터</strong>
-                                <span>표준프레임워크센터의<br />약도 등의 정보를 제공합니다.</span>
+                            <Link to={URL.ABOUT_LOCATION} className="bn2">
+                                <strong>회사위치</strong>
+                                <span>MX의<br />약도 등의 정보를 제공합니다.</span>
                             </Link>
                         </div>
                     </div>
@@ -215,7 +215,7 @@ function EgovMain(props) {
                     <div className="b1">
                         <div>
                             <h2>회사 소개</h2>
-                            <p>표준프레임워크가 제공하는<br />
+                            <p>MX가 제공하는<br />
                                 주요 사업을 소개합니다.</p>
                         </div>
                         <Link to={URL.ABOUT_SITE}>자세히 보기</Link>
@@ -223,7 +223,7 @@ function EgovMain(props) {
                     <div className="b2">
                         <div>
                             <h2>제품 소개</h2>
-                            <p>표준프레임워크 실행환경의<br />
+                            <p>MX의<br />
                                 서비스 그룹에서 제공하는<br />
                                 대표서비스입니다.</p>
                         </div>
@@ -232,20 +232,18 @@ function EgovMain(props) {
                     <div className="b3">
                         <div>
                             <h2>서비스 신청</h2>
-                            <p>표준프레임워크 경량환경<br />
-                                홈페이지의 다양한 서비스를<br />
+                            <p>MX홈페이지의 다양한 서비스를<br />
                                 신청 하실 수 있습니다.</p>
                         </div>
-                        <Link to={URL.SUPPORT_APPLY}>자세히 보기</Link>
+                        <Link to={URL.SUPPORT_CENTER1}>자세히 보기</Link>
                     </div>
                     <div className="b4">
                         <div>
-                            <h2>일정 현황</h2>
-                            <p>표준프레임워크 경량환경<br />
-                                홈페이지의 전체적인 일정<br />
-                                현황을 조회하실 수 있습니다.</p>
+                            <h2>쇼핑몰</h2>
+                            <p>MX홈페이지의 연계된<br />
+                                온라인 쇼핑몰을 조회하실 수 있습니다.</p>
                         </div>
-                        <Link to={URL.INFORM}>자세히 보기</Link>
+                        <Link to={URL.MALL}>자세히 보기</Link>
                     </div>
                 </div>
             </div>

@@ -9,3 +9,5 @@ export const MANUAL_BBS_ID = "BBSMSTR_000000000004"; // 매뉴얼 게시판 아�
 export const SAM_BBS_ID = "BBSMSTR_000000000005"; // 유지관리 지침서 게시판 아이디
 export const INSTALL_BBS_ID = "BBSMSTR_000000000006"; // 설치도 게시판 아이디
 export const CD_BBS_ID = "BBSMSTR_000000000007"; // 결선도 게시판 아이디
+export const SERVICE1_BBS_ID = "BBSMSTR_000000000008"; // 제품소개 게시판 아이디
+export const CENTER1_BBS_ID = "BBSMSTR_000000000009"; // 고객센터 게시판 아이디
