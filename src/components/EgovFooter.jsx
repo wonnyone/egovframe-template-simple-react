@@ -38,7 +38,7 @@ function EgovFooter() {
                         인천광역시 서구 가정로 38번길 10, 다동 1층 9호(가좌동)<br/>
                         대표전화 : 070-7678-4518  |  FAX : 070-7178-4512  |  이메일 : metersx@naver.com
                     </p>
-                    <p className="copy">Copyright © 2024 Ministry Of The Interior And Safety. All Rights Reserved.</p>
+                    <p className="copy">Copyright © 2025 Ministry Of The Interior And Safety. All Rights Reserved.</p>
                 </div>
                 {/* <div className="right_col">
                     <Link to="">

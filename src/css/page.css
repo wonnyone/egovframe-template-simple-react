@@ -289,7 +289,7 @@
     .SERVICE_INTRO .pro-img {margin:0 -15px;}
     .SERVICE_INTRO .pro-img li{float:left; width:25%; padding:15px; }
     .SERVICE_INTRO .pro-img .img-box{ text-align: center; border:1px solid #e7e7e7; padding:30px;}
-    .SERVICE_INTRO .pro-img .img-box .wameterimg{ max-width:100%;max-height:100%;width:269;}
+    .SERVICE_INTRO .pro-img .img-box .serviceimg{ max-width:100%;max-height:100%;width:269;}
     .SERVICE_INTRO .pro-img .txt-box{ text-align: center; font-size:16px; font-weight:500; margin-top:14px;}
     
     .SERVICE_INTRO .pro-section.section02 {padding-bottom:25px;position:relative;}

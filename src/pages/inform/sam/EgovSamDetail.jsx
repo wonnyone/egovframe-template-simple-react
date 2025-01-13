@@ -5,25 +5,25 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
 import CODE from 'constants/code';
-import { NOTICE_BBS_ID } from 'config';
+import { SAM_BBS_ID } from 'config';
 
 import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavInform';
 import EgovAttachFile from 'components/EgovAttachFile';
 import { getSessionItem } from 'utils/storage';
 
-function EgovNoticeDetail(props) {
-    console.group("EgovNoticeDetail");
+function EgovSamDetail(props) {
+    console.group("EgovSamDetail");
     console.log("------------------------------");
-    console.log("EgovNoticeDetail [props] : ", props);
+    console.log("EgovSamDetail [props] : ", props);
 
     const navigate = useNavigate();
     const location = useLocation();
-    console.log("EgovNoticeDetail [location] : ", location);
+    console.log("EgovSamDetail [location] : ", location);
 	//관리자 권한 체크때문에 추가(아래)
 	const sessionUser = getSessionItem('loginUser');
 	const sessionUserSe = sessionUser?.userSe;
 	
-    const bbsId = location.state.bbsId || NOTICE_BBS_ID;
+    const bbsId = location.state.bbsId || SAM_BBS_ID;
     const nttId = location.state.nttId;
     const searchCondition = location.state.searchCondition;
 
@@ -67,7 +67,7 @@ function EgovNoticeDetail(props) {
                 console.log("====>>> board delete= ", resp);
                 if (Number(resp.resultCode) === Number(CODE.RCV_SUCCESS)) {
                     alert("게시글이 삭제되었습니다.")
-                    navigate(URL.INFORM_NOTICE ,{ replace: true });
+                    navigate(URL.INFORM_SAM ,{ replace: true });
                 } else {
                     navigate({pathname: URL.ERROR}, {state: {msg : resp.resultMessage}});
                 }
@@ -81,7 +81,7 @@ function EgovNoticeDetail(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     
-    console.groupEnd("EgovNoticeDetail");
+    console.groupEnd("EgovSamDetail");
 
     return (
         <div className="container">
@@ -142,7 +142,7 @@ function EgovNoticeDetail(props) {
                             <div className="board_btn_area">
                                 {user && sessionUserSe ==='ADM' && masterBoard.bbsUseFlag === 'Y' &&
                                     <div className="left_col btn3">
-                                        <Link to={{pathname: URL.INFORM_NOTICE_MODIFY}}
+                                        <Link to={{pathname: URL.INFORM_SAM_MODIFY}}
                                             state={{
                                                 nttId: nttId,
                                                 bbsId: bbsId
@@ -153,7 +153,7 @@ function EgovNoticeDetail(props) {
                                             onClickDeleteBoardArticle(boardDetail.bbsId, boardDetail.nttId);
                                         }}>삭제</button>
 										{masterBoard.replyPosblAt === 'Y' &&
-                                        <Link to={{pathname: URL.INFORM_NOTICE_REPLY}}
+                                        <Link to={{pathname: URL.INFORM_SAM_REPLY}}
                                             state={{
                                                 nttId: nttId,
                                                 bbsId: bbsId
@@ -164,7 +164,7 @@ function EgovNoticeDetail(props) {
                                 }
 
                                 <div className="right_col btn1">
-                                    <Link to={{pathname: URL.INFORM_NOTICE}}
+                                    <Link to={{pathname: URL.INFORM_SAM}}
                                         state={{
                                             nttId: nttId,
                                             bbsId: bbsId,
@@ -185,4 +185,4 @@ function EgovNoticeDetail(props) {
 }
 
 
-export default EgovNoticeDetail;
+export default EgovSamDetail;

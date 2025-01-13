@@ -5,26 +5,26 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
 import CODE from 'constants/code';
-import { NOTICE_BBS_ID } from 'config';
+import { MANUAL_BBS_ID } from 'config';
 
 import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavInform';
 import EgovAttachFile from 'components/EgovAttachFile';
 import bbsFormVaildator from 'utils/bbsFormVaildator';
 import { getSessionItem } from 'utils/storage';
 
-function EgovNoticeEdit(props) {
-    console.group("EgovNoticeEdit");
+function EgovManualEdit(props) {
+    console.group("EgovManualEdit");
     console.log("------------------------------");
-    console.log("EgovNoticeEdit [props] : ", props);
+    console.log("EgovManualEdit [props] : ", props);
 
     const navigate = useNavigate();
     const location = useLocation();
-    console.log("EgovNoticeEdit [location] : ", location);
+    console.log("EgovManualEdit [location] : ", location);
 	//관리자 권한 체크때문에 추가(아래)
 	const sessionUser = getSessionItem('loginUser');
 	const sessionUserSe = sessionUser?.userSe;
 	
-    const bbsId = location.state?.bbsId || NOTICE_BBS_ID;
+    const bbsId = location.state?.bbsId || MANUAL_BBS_ID;
     const nttId = location.state?.nttId || "";
 
     const [modeInfo, setModeInfo] = useState({ mode: props.mode });
@@ -131,7 +131,7 @@ function EgovNoticeEdit(props) {
                 requestOptions,
                 (resp) => {
                     if (Number(resp.resultCode) === Number(CODE.RCV_SUCCESS)) {
-                        navigate(URL.INFORM_NOTICE, {state:{bbsId : bbsId}});
+                        navigate(URL.INFORM_MANUAL, {state:{bbsId : bbsId}});
                     } else {
                         // alert("ERR : " + resp.message);
                         navigate({pathname: URL.ERROR}, {state: {msg : resp.resultMessage}});
@@ -158,7 +158,7 @@ function EgovNoticeEdit(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.groupEnd("EgovNoticeEdit");
+    console.groupEnd("EgovManualEdit");
 
     return (
         <div className="container">
@@ -230,7 +230,7 @@ function EgovNoticeEdit(props) {
                                 </div>
 							}
                                 <div className="right_col btn1">
-                                    <Link to={URL.INFORM_NOTICE} className="btn btn_blue_h46 w_100">목록</Link>
+                                    <Link to={URL.INFORM_MANUAL} className="btn btn_blue_h46 w_100">목록</Link>
                                 </div>
                             </div>
                             {/* <!--// 버튼영역 --> */}
@@ -245,4 +245,4 @@ function EgovNoticeEdit(props) {
     );
 }
 
-export default EgovNoticeEdit;
+export default EgovManualEdit;

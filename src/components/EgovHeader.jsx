@@ -73,10 +73,10 @@ function EgovHeader() {
                         <li><NavLink to={URL.ABOUT} className={({ isActive }) => (isActive ? "cur" : "")}>회사소개</NavLink></li>
                         <li><NavLink to={URL.INTRO} className={({ isActive }) => (isActive ? "cur" : "")}>제품소개</NavLink></li>
                         <li><NavLink to={URL.INFORM_CATALOG} className={({ isActive }) => (isActive ? "cur" : "")}>자료실</NavLink></li>
-                        <li><NavLink to={URL.SUPPORT} className={({ isActive }) => (isActive ? "cur" : "")}>고객센터</NavLink></li>
+                        <li><NavLink to={URL.SUPPORT_CENTER1} className={({ isActive }) => (isActive ? "cur" : "")}>고객센터</NavLink></li>
                         <li><NavLink to={URL.MALL} className={({ isActive }) => (isActive ? "cur" : "")}>쇼핑몰</NavLink></li>
                         {sessionUserSe ==='ADM' &&
-                            <li><NavLink to={URL.ADMIN} className={({ isActive }) => (isActive ? "cur" : "")}>사이트관리</NavLink></li>
+                            <li><NavLink to={URL.ADMIN_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>사이트관리</NavLink></li>
                         }
                     </ul>
                 </div>
@@ -133,7 +133,12 @@ function EgovHeader() {
                             <li><NavLink to={URL.INTRO_SERVICE2} className={({ isActive }) => (isActive ? "cur" : "")}>온수미터</NavLink></li>
                             <li><NavLink to={URL.INTRO_SERVICE3} className={({ isActive }) => (isActive ? "cur" : "")}>적산열량계</NavLink></li>
                             <li><NavLink to={URL.INTRO_SERVICE4} className={({ isActive }) => (isActive ? "cur" : "")}>원격 지시부</NavLink></li>
-                            <li><NavLink to={URL.INTRO_SERVICE5} className={({ isActive }) => (isActive ? "cur" : "")}>컨버터</NavLink></li>
+                            <li>컨버터
+                                <ul>
+                                    <li><NavLink to={URL.INTRO_SERVICE5} className={({ isActive }) => (isActive ? "cur" : "")}>펄스변환기</NavLink></li>
+                                    <li><NavLink to={URL.INTRO_SERVICE6} className={({ isActive }) => (isActive ? "cur" : "")}>485변환기기</NavLink></li>
+                                </ul>                           
+                            </li>
                         </ul>
                     </div>
                     <div className="col">
@@ -159,9 +164,10 @@ function EgovHeader() {
                     <div className="col">
                         <h3>고객센터</h3>
                         <ul>
-                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>견적문의</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>묻고 답하기</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>AS 안내</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_CENTER1} className={({ isActive }) => (isActive ? "cur" : "")}>견적문의</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_CENTER2} className={({ isActive }) => (isActive ? "cur" : "")}>AS안내</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_CENTER3} className={({ isActive }) => (isActive ? "cur" : "")}>FAQ</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_CENTER4} className={({ isActive }) => (isActive ? "cur" : "")}>제품사용시 주의사항 예시</NavLink></li>
                         </ul>
                     </div>
                     <div className="col">
@@ -177,11 +183,11 @@ function EgovHeader() {
                             <h3>사이트관리</h3>
                             <ul>                                
                                 {/*<li><NavLink to={URL.ADMIN_SCHEDULE} className={({ isActive }) => (isActive ? "cur" : "")}>일정관리</NavLink></li>*/}
+                                <li><NavLink to={URL.ADMIN_MANAGER} className={({ isActive }) => (isActive ? "cur" : "")}>사이트관리자 암호변경</NavLink></li>
                                 <li><NavLink to={URL.ADMIN_BOARD} className={({ isActive }) => (isActive ? "cur" : "")}>게시판생성관리</NavLink></li>
                                 <li><NavLink to={URL.ADMIN_USAGE} className={({ isActive }) => (isActive ? "cur" : "")}>게시판사용관리</NavLink></li>
-                                <li><NavLink to={URL.ADMIN_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항관리</NavLink></li>
-                                <li><NavLink to={URL.ADMIN_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트갤러리관리</NavLink></li>
-                                <li><NavLink to={URL.ADMIN_MANAGER} className={({ isActive }) => (isActive ? "cur" : "")}>사이트관리자 암호변경</NavLink></li>
+                                <li><NavLink to={URL.ADMIN_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항관리(개발참조)</NavLink></li>
+                                <li><NavLink to={URL.ADMIN_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트갤러리관리(개발참조)</NavLink></li>
 								{/*<li><NavLink to={URL.ADMIN_MEMBERS} className={({ isActive }) => (isActive ? "cur" : "")}>회원관리</NavLink></li>*/}
                             </ul>
                         </div>
@@ -228,7 +234,12 @@ function EgovHeader() {
                             <li><NavLink to={URL.INTRO_SERVICE2} className={({ isActive }) => (isActive ? "cur" : "")}>온수미터</NavLink></li>
                             <li><NavLink to={URL.INTRO_SERVICE3} className={({ isActive }) => (isActive ? "cur" : "")}>적산열량계</NavLink></li>
                             <li><NavLink to={URL.INTRO_SERVICE4} className={({ isActive }) => (isActive ? "cur" : "")}>원격 지시부</NavLink></li>
-                            <li><NavLink to={URL.INTRO_SERVICE5} className={({ isActive }) => (isActive ? "cur" : "")}>컨버터</NavLink></li>
+                            <li>컨버터
+                                <ul>
+                                    <li><NavLink to={URL.INTRO_SERVICE5} className={({ isActive }) => (isActive ? "cur" : "")}>펄스변환기</NavLink></li>
+                                    <li><NavLink to={URL.INTRO_SERVICE6} className={({ isActive }) => (isActive ? "cur" : "")}>485변환기기</NavLink></li>
+                                </ul>                           
+                            </li>
                         </ul>
                     </div>
                     <h3><Link to={URL.INFORM_CATALOG}>자료실</Link></h3>
@@ -251,12 +262,13 @@ function EgovHeader() {
                             </li>
                         </ul>
                     </div>
-                    <h3><Link to={URL.SUPPORT}>고객센터</Link></h3>
+                    <h3><Link to={URL.SUPPORT_CENTER1}>고객센터</Link></h3>
                     <div className="submenu closed">
                         <ul>
-                            <li><NavLink to={URL.SUPPORT_DOWNLOAD} className={({ isActive }) => (isActive ? "cur" : "")}>견적문의</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_QNA} className={({ isActive }) => (isActive ? "cur" : "")}>묻고 답하기</NavLink></li>
-                            <li><NavLink to={URL.SUPPORT_APPLY} className={({ isActive }) => (isActive ? "cur" : "")}>AS안내</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_CENTER1} className={({ isActive }) => (isActive ? "cur" : "")}>견적문의</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_CENTER2} className={({ isActive }) => (isActive ? "cur" : "")}>AS안내</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_CENTER3} className={({ isActive }) => (isActive ? "cur" : "")}>FAQ</NavLink></li>
+                            <li><NavLink to={URL.SUPPORT_CENTER4} className={({ isActive }) => (isActive ? "cur" : "")}>제품사용시 주의사항 예시</NavLink></li>
                         </ul>
                     </div>
                     <h3><Link to={URL.MALL}>쇼핑몰</Link></h3>
@@ -273,11 +285,11 @@ function EgovHeader() {
                             <div className="submenu closed">
                                 <ul>
                                     {/*<li><NavLink to={URL.ADMIN_SCHEDULE} className={({ isActive }) => (isActive ? "cur" : "")}>일정관리</NavLink></li>*/}
-                                    <li><NavLink to={URL.ADMIN_BOARD} className={({ isActive }) => (isActive ? "cur" : "")}>게시판생성관리</NavLink></li>
-                                    <li><NavLink to={URL.ADMIN_USAGE} className={({ isActive }) => (isActive ? "cur" : "")}>게시판사용관리</NavLink></li>
                                     <li><NavLink to={URL.ADMIN_NOTICE} className={({ isActive }) => (isActive ? "cur" : "")}>공지사항관리</NavLink></li>
                                     <li><NavLink to={URL.ADMIN_GALLERY} className={({ isActive }) => (isActive ? "cur" : "")}>사이트갤러리관리</NavLink></li>
                                     <li><NavLink to={URL.ADMIN_MANAGER} className={({ isActive }) => (isActive ? "cur" : "")}>사이트관리자 암호변경</NavLink></li>
+                                    <li><NavLink to={URL.ADMIN_BOARD} className={({ isActive }) => (isActive ? "cur" : "")}>게시판생성관리</NavLink></li>
+                                    <li><NavLink to={URL.ADMIN_USAGE} className={({ isActive }) => (isActive ? "cur" : "")}>게시판사용관리</NavLink></li>
 									{/*<li><NavLink to={URL.ADMIN_MEMBERS} className={({ isActive }) => (isActive ? "cur" : "")}>회원관리</NavLink></li>*/}
                                 </ul>
                             </div>
