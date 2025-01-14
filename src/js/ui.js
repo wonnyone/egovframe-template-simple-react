@@ -19,7 +19,7 @@ export default function initPage() {
         });
 
         // 웹 mouseenter시, 전체메뉴 열기
-        document.querySelector('.gnb').addEventListener('mouseleave', (e) => {
+        document.querySelector('.all_menu.WEB').addEventListener('mouseleave', (e) => {
             const el = e.target;
     
             el.classList.toggle('active');

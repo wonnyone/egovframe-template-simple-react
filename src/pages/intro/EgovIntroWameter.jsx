@@ -30,7 +30,7 @@ function EgovIntroWameter() {
                         <ul class="pro-img">
                             <li>
                                 <div class="img-box">
-                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_oWfg3zjl_ea85b1498fe6cd6af4942b5a6cb8802449226976.jpg" className="wameterimg" alt="wameter" />                
+                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_oWfg3zjl_ea85b1498fe6cd6af4942b5a6cb8802449226976.jpg" className="serviceimg" alt="wameter" />                
                                     {/* <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_oWfg3zjl_ea85b1498fe6cd6af4942b5a6cb8802449226976.jpg" style="max-width:100%;max-height:100%" width="269"/>                </div> */}
                                 </div>
                                 <div class="txt-box">
@@ -39,7 +39,7 @@ function EgovIntroWameter() {
                             </li>
                             <li>
                                 <div class="img-box">
-                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_U1dwnlq0_d7598ff4301f8872aa39b50b7d1fc09ab72e3c78.jpg" className="wameterimg" alt="wameter" />                
+                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_U1dwnlq0_d7598ff4301f8872aa39b50b7d1fc09ab72e3c78.jpg" className="serviceimg" alt="wameter" />                
                                 </div>
                                 <div class="txt-box">
                                     수도미터, 복갑습식, 역류                
@@ -47,7 +47,7 @@ function EgovIntroWameter() {
                             </li>
                             <li>
                                 <div class="img-box">
-                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_yJnTfd0e_81fac5cce18468819a72fd7568fb632d4e664d75.jpg" className="wameterimg" alt="wameter" />                
+                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_yJnTfd0e_81fac5cce18468819a72fd7568fb632d4e664d75.jpg" className="serviceimg" alt="wameter" />                
                                 </div>
                                 <div class="txt-box">
                                     수도미터, 복갑습식, 일반, 니켈상부                
@@ -55,7 +55,7 @@ function EgovIntroWameter() {
                             </li>
                             <li>
                                 <div class="img-box">
-                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_PQZLq1BN_a52ffc7b333c1b45106b4aa0637e66e0aa70682b.jpg" className="wameterimg" alt="wameter" />                
+                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_PQZLq1BN_a52ffc7b333c1b45106b4aa0637e66e0aa70682b.jpg" className="serviceimg" alt="wameter" />                
                                 </div>
                                 <div class="txt-box">
                                     수도미터, 복갑습식, 역류, 니켈상부                
@@ -63,7 +63,7 @@ function EgovIntroWameter() {
                             </li>
                             < li>
                                 <div class="img-box">
-                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_8UQp3muH_95ce54874c20eb9b85d35477649a29ce64fc9225.jpg" className="wameterimg" alt="wameter" />                
+                                    <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_8UQp3muH_95ce54874c20eb9b85d35477649a29ce64fc9225.jpg" className="serviceimg" alt="wameter" />                
                                 </div>
                                 <div class="txt-box">
                                     수도미터, 복갑습식, 역류, 동파예방                

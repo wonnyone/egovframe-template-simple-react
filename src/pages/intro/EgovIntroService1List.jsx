@@ -3,29 +3,29 @@ import { Link, useLocation } from 'react-router-dom';
 
 import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
-import { CD_BBS_ID } from 'config';
+import { SERVICE1_BBS_ID } from 'config';
 
-import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavInform';
+import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavIntro';
 import EgovPaging from 'components/EgovPaging';
 
 import { itemIdxByPage } from 'utils/calc';
 import { getSessionItem } from 'utils/storage';
 
-function EgovCdList(props) {
-    console.group("EgovCdList");
-    console.log("[Start] EgovCdList ------------------------------");
-    console.log("EgovCdList [props] : ", props);
+function EgovIntroService1List(props) {
+    console.group("EgovIntroService1List");
+    console.log("[Start] EgovIntroService1List ------------------------------");
+    console.log("EgovIntroService1List [props] : ", props);
 	
     const location = useLocation();
-    console.log("EgovCdList [location] : ", location);
+    console.log("EgovIntroService1List [location] : ", location);
 
 	const cndRef = useRef();
     const wrdRef = useRef();
 	//관리자 권한 체크때문에 추가(아래)
 	const sessionUser = getSessionItem('loginUser');
 	const sessionUserSe = sessionUser?.userSe;
-	
-    const bbsId = location.state?.bbsId || CD_BBS_ID; 
+    console.log("sessionUserSe : ", sessionUserSe);
+    const bbsId = location.state?.bbsId || SERVICE1_BBS_ID; 
 	
 	// eslint-disable-next-line no-unused-vars
     const [searchCondition, setSearchCondition] = useState(location.state?.searchCondition || { bbsId: bbsId, pageIndex: 1, searchCnd: '0', searchWrd: '' });// 기존 조회에서 접근 했을 시 || 신규로 접근 했을 시
@@ -36,7 +36,7 @@ function EgovCdList(props) {
     const [listTag, setListTag] = useState([]);
 
     const retrieveList = useCallback((searchCondition) => {
-        console.groupCollapsed("EgovCdList.retrieveList()");
+        console.groupCollapsed("EgovIntroService1List.retrieveList()");
 
         const retrieveListURL = '/board'+EgovNet.getQueryString(searchCondition);;
         const requestOptions = {
@@ -67,7 +67,7 @@ function EgovCdList(props) {
 
                     mutListTag.push(
                         <Link
-                            to={{pathname: URL.INFORM_CD_DETAIL}}
+                            to={{pathname: URL.INTRO_SERVICE1_DETAIL}}
                             state={{
                                 nttId: item.nttId,
                                 bbsId: item.bbsId,
@@ -96,7 +96,7 @@ function EgovCdList(props) {
                 console.log("err response : ", resp);
             }
         );
-        console.groupEnd("EgovCdList.retrieveList()");
+        console.groupEnd("EgovIntroService1List.retrieveList()");
     },[]);
 
     useEffect(() => {
@@ -104,8 +104,8 @@ function EgovCdList(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log("------------------------------EgovCdList [End]");
-    console.groupEnd("EgovCdList");
+    console.log("------------------------------EgovIntroService1List [End]");
+    console.groupEnd("EgovIntroService1List");
     return (
         <div className="container">
             <div className="c_wrap">
@@ -113,7 +113,7 @@ function EgovCdList(props) {
                 <div className="location">
                     <ul>
                         <li><Link to={URL.MAIN} className="home">Home</Link></li>
-                        <li><Link to={URL.INFORM}>자료실</Link></li>
+                        <li><Link to={URL.INFORM}>제품소개</Link></li>
                         <li>{masterBoard && masterBoard.bbsNm}</li>
                     </ul>
                 </div>
@@ -128,7 +128,7 @@ function EgovCdList(props) {
                         {/* <!-- 본문 --> */}
 
                         <div className="top_tit">
-                            <h1 className="tit_1">자료실</h1>
+                            <h1 className="tit_1">제품소개</h1>
                         </div>
 
                         <h2 className="tit_2">{masterBoard && masterBoard.bbsNm}</h2>
@@ -164,7 +164,7 @@ function EgovCdList(props) {
                                 </li>{/* user.id 대신 권한그룹 세션값 사용 */}
                                 {user && sessionUserSe ==='ADM' && masterBoard.bbsUseFlag === 'Y' &&
                                     <li>
-                                        <Link to={URL.INFORM_CD_CREATE} state={{bbsId: bbsId}} className="btn btn_blue_h46 pd35">등록</Link>
+                                        <Link to={URL.INTRO_SERVICE1_CREATE} state={{bbsId: bbsId}} className="btn btn_blue_h46 pd35">등록</Link>
                                     </li>
                                 }
                             </ul>
@@ -203,4 +203,4 @@ function EgovCdList(props) {
 }
 
 
-export default EgovCdList;
+export default EgovIntroService1List;

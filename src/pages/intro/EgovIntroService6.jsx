@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavIntro';
 
-function EgovIntroService5() {
+function EgovIntroService6() {
     return (
         <div className="container">
         <div className="c_wrap">
@@ -12,7 +12,7 @@ function EgovIntroService5() {
                 <ul>
                     <li><a className="home" href="#!">Home</a></li>
                     <li><a href="#!">제품소개</a></li>
-                    <li>펄스변환기</li>
+                    <li>485변환기기</li>
                 </ul>
             </div>
             {/* <!--// Location --> */}
@@ -31,7 +31,7 @@ function EgovIntroService5() {
 
                     {/* <p className="txt_1">표준프레임워크 경량환경 포털사이트를 소개합니다.</p> */}
                     
-                    <h2 className="tit_2">펄스변환기</h2>
+                    <h2 className="tit_2">485변환기기</h2>
 
                     {/* <h3 className="tit_5">개요</h3> */}
 
@@ -92,4 +92,4 @@ function EgovIntroService5() {
     );
 }
 
-export default EgovIntroService5;
+export default EgovIntroService6;

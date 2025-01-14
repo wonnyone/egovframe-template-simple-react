@@ -21,19 +21,32 @@ const URL = {
     INTRO_SERVICE               : "/intro/service", // 정보마당/주요서비스소개
     INTRO_WAMETER               : "/intro/wameter", // 정보마당/수도미터
     INTRO_SERVICE1               : "/intro/service1", // 정보마당/주요서비스소개1 추가
+    INTRO_SERVICE1_LIST          : "/intro/service1/list", // 정보마당/주요서비스소개1
+    INTRO_SERVICE1_DETAIL        : "/intro/service1/detail", // 정보마당/주요서비스소개1상세
+    INTRO_SERVICE1_CREATE        : "/intro/service1/create", // 정보마당/주요서비스소개1등록
+    INTRO_SERVICE1_MODIFY        : "/intro/service1/modify", // 정보마당/주요서비스소개1수정
     INTRO_SERVICE2               : "/intro/service2", // 정보마당/주요서비스소개2 추가
     INTRO_SERVICE3               : "/intro/service3", // 정보마당/주요서비스소개3 추가
     INTRO_SERVICE4               : "/intro/service4", // 정보마당/주요서비스소개4 추가
     INTRO_SERVICE5               : "/intro/service5", // 정보마당/주요서비스소개5 추가
+    INTRO_SERVICE6               : "/intro/service6", // 정보마당/주요서비스소개6 추가
     
     //SUPPORT
-    SUPPORT                     : "/support", // 고객지원
-    SUPPORT_DOWNLOAD            : "/support/download", // 고객지원/자료실
-    SUPPORT_DOWNLOAD_DETAIL     : "/support/download/detail", // 고객지원/자료실/상세
-    SUPPORT_DOWNLOAD_CREATE     : "/support/download/create", // 고객지원/자료실/등록
-    SUPPORT_QNA                 : "/support/qna", // 고객지원/묻고답하기
-    SUPPORT_QNA_DETAIL          : "/support/qna/detail", // 고객지원/묻고답하기/상세
-    SUPPORT_APPLY               : "/support/apply", // 고객지원/서비스신청
+    SUPPORT                     : "/support", // 고객지원(Egov)
+    SUPPORT_DOWNLOAD            : "/support/download", // 고객지원/자료실(Egov)
+    SUPPORT_DOWNLOAD_DETAIL     : "/support/download/detail", // 고객지원/자료실/상세(Egov)
+    SUPPORT_DOWNLOAD_CREATE     : "/support/download/create", // 고객지원/자료실/등록(Egov)
+    SUPPORT_QNA                 : "/support/qna", // 고객지원/묻고답하기(Egov)
+    SUPPORT_QNA_DETAIL          : "/support/qna/detail", // 고객지원/묻고답하기/상세(Egov)
+    SUPPORT_APPLY               : "/support/apply", // 고객지원/서비스신청(Egov)
+    SUPPORT_CENTER1             : "/support/center1", // 고객센터/견적문의
+    SUPPORT_CENTER1_LIST        : "/support/center1/list", // 고객센터/고객센터 관리
+    SUPPORT_CENTER1_DETAIL      : "/support/center1/detail", // 고객센터/고객센터 관리상세
+    SUPPORT_CENTER1_CREATE      : "/support/center1/create", // 고객센터/고객센터 관리등록
+    SUPPORT_CENTER1_MODIFY      : "/support/center1/modify", // 고객센터/고객센터 관리수정
+    SUPPORT_CENTER2             : "/support/cneter2", // 고객센터/AS안내
+    SUPPORT_CENTER3             : "/support/cneter3", // 고객센터/FAQ
+    SUPPORT_CENTER4             : "/support/cneter4", // 고객센터/제품사용시 주의사항 예시
     
     //INFORM
     INFORM                      : "/inform", // 알림마당 
@@ -83,48 +96,49 @@ const URL = {
     INFORM_CD_MODIFY           : "/inform/cd/modify", // 자료실/결선도수정
 
     //MALL
-    MALL_MX                     : "https://www.mxmall.com",   //MX 쇼핑몰
-    MALL_NV                     : "https://www.naver.com",   //네이버 쇼핑몰
-    MALL_CP                     : "https://www.coupang.com",   //쿠팡 쇼핑몰
+    MALL                       : "/mall", // 쇼핑몰
+    MALL_MX                    : "https://www.mxmall.com",   //MX 쇼핑몰
+    MALL_NV                    : "https://www.naver.com",   //네이버 쇼핑몰
+    MALL_CP                    : "https://www.coupang.com",   //쿠팡 쇼핑몰
 
     //ADMIN
-    ADMIN                       : "/admin", // 사이트관리
-    ADMIN_SCHEDULE              : "/admin/schedule", // 사이트관리/일정관리
-    ADMIN_SCHEDULE_DETAIL       : "/admin/schedule/detail", // 사이트관리/일정관리상세
-    ADMIN_SCHEDULE_CREATE       : "/admin/schedule/create", // 사이트관리/일정관리생성
-    ADMIN_SCHEDULE_MODIFY       : "/admin/schedule/modify", // 사이트관리/일정관리수정
+    ADMIN                      : "/admin", // 사이트관리
+    ADMIN_SCHEDULE             : "/admin/schedule", // 사이트관리/일정관리
+    ADMIN_SCHEDULE_DETAIL      : "/admin/schedule/detail", // 사이트관리/일정관리상세
+    ADMIN_SCHEDULE_CREATE      : "/admin/schedule/create", // 사이트관리/일정관리생성
+    ADMIN_SCHEDULE_MODIFY      : "/admin/schedule/modify", // 사이트관리/일정관리수정
 
-    ADMIN_BOARD                 : "/admin/board", // 사이트관리/게시판생성관리 목록
-    ADMIN_BOARD_DETAIL          : "/admin/board/detail", // 사이트관리/게시판생성관리 상세
-    ADMIN_BOARD_CREATE          : "/admin/board/create", // 사이트관리/게시판생성관리 등록
-    ADMIN_BOARD_MODIFY          : "/admin/board/modify", // 사이트관리/게시판생성관리 상세/수정
+    ADMIN_BOARD                : "/admin/board", // 사이트관리/게시판생성관리 목록
+    ADMIN_BOARD_DETAIL         : "/admin/board/detail", // 사이트관리/게시판생성관리 상세
+    ADMIN_BOARD_CREATE         : "/admin/board/create", // 사이트관리/게시판생성관리 등록
+    ADMIN_BOARD_MODIFY         : "/admin/board/modify", // 사이트관리/게시판생성관리 상세/수정
 
-    ADMIN_USAGE                 : "/admin/usage", // 사이트관리/게시판사용관리 목록
-    ADMIN_USAGE_DETAIL          : "/admin/usage/detail", // 사이트관리/게시판사용관리 상세
-    ADMIN_USAGE_CREATE          : "/admin/usage/create", // 사이트관리/게시판사용관리 등록
-    ADMIN_USAGE_MODIFY          : "/admin/usage/modify", // 사이트관리/게시판사용관리 상세/수정
+    ADMIN_USAGE                : "/admin/usage", // 사이트관리/게시판사용관리 목록
+    ADMIN_USAGE_DETAIL         : "/admin/usage/detail", // 사이트관리/게시판사용관리 상세
+    ADMIN_USAGE_CREATE         : "/admin/usage/create", // 사이트관리/게시판사용관리 등록
+    ADMIN_USAGE_MODIFY         : "/admin/usage/modify", // 사이트관리/게시판사용관리 상세/수정
 
-    ADMIN_NOTICE                : "/admin/notice", // 사이트관리/공지사항관리 목록
-    ADMIN_NOTICE_DETAIL         : "/admin/notice/detail", // 사이트관리/공지사항관리 상세
-    ADMIN_NOTICE_CREATE         : "/admin/notice/create", // 사이트관리/공지사항관리 등록
-    ADMIN_NOTICE_MODIFY         : "/admin/notice/modify", // 사이트관리/공지사항관리 수정
-    ADMIN_NOTICE_REPLY          : "/admin/notice/reply", // 사이트관리/공지사항관리 답글 등록
+    ADMIN_NOTICE               : "/admin/notice", // 사이트관리/공지사항관리 목록
+    ADMIN_NOTICE_DETAIL        : "/admin/notice/detail", // 사이트관리/공지사항관리 상세
+    ADMIN_NOTICE_CREATE        : "/admin/notice/create", // 사이트관리/공지사항관리 등록
+    ADMIN_NOTICE_MODIFY        : "/admin/notice/modify", // 사이트관리/공지사항관리 수정
+    ADMIN_NOTICE_REPLY         : "/admin/notice/reply", // 사이트관리/공지사항관리 답글 등록
 
-    ADMIN_GALLERY               : "/admin/gallery", // 사이트관리/사이트갤러리관리
-    ADMIN_GALLERY_DETAIL        : "/admin/gallery/detail", // 사이트관리/사이트갤러리관리 상세
-    ADMIN_GALLERY_CREATE        : "/admin/gallery/create", // 사이트관리/사이트갤러리관리 등록
-    ADMIN_GALLERY_MODIFY        : "/admin/gallery/modify", // 사이트관리/사이트갤러리관리 수정
-    ADMIN_GALLERY_REPLY         : "/admin/gallery/reply", // 사이트관리/사이트갤러리관리 답글 등록
+    ADMIN_GALLERY              : "/admin/gallery", // 사이트관리/사이트갤러리관리
+    ADMIN_GALLERY_DETAIL       : "/admin/gallery/detail", // 사이트관리/사이트갤러리관리 상세
+    ADMIN_GALLERY_CREATE       : "/admin/gallery/create", // 사이트관리/사이트갤러리관리 등록
+    ADMIN_GALLERY_MODIFY       : "/admin/gallery/modify", // 사이트관리/사이트갤러리관리 수정
+    ADMIN_GALLERY_REPLY        : "/admin/gallery/reply", // 사이트관리/사이트갤러리관리 답글 등록
 
-    ADMIN_MANAGER               : "/admin/manager", // 사이트관리/사이트관리자 암호변경 기능
-    ADMIN_MEMBERS               : "/admin/members", // 사이트관리/회원관리 목록기능
-    ADMIN_MEMBERS_DETAIL        : "/admin/members/detail", // 사이트관리/회원관리 상세
-    ADMIN_MEMBERS_CREATE        : "/admin/members/create", // 사이트관리/회원관리 등록
-    ADMIN_MEMBERS_MODIFY        : "/admin/members/modify", // 사이트관리/회원관리 상세/수정
+    ADMIN_MANAGER              : "/admin/manager", // 사이트관리/사이트관리자 암호변경 기능
+    ADMIN_MEMBERS              : "/admin/members", // 사이트관리/회원관리 목록기능
+    ADMIN_MEMBERS_DETAIL       : "/admin/members/detail", // 사이트관리/회원관리 상세
+    ADMIN_MEMBERS_CREATE       : "/admin/members/create", // 사이트관리/회원관리 등록
+    ADMIN_MEMBERS_MODIFY       : "/admin/members/modify", // 사이트관리/회원관리 상세/수정
 
     //MYPAGE
-    MYPAGE_MODIFY      			: "/mypage/modify", // 고객지원/마이페이지/회원 수정
-    MYPAGE_CREATE       		: "/mypage/create", // 고객지원/마이페이지/회원 등록
+    MYPAGE_MODIFY      		   : "/mypage/modify", // 고객지원/마이페이지/회원 수정
+    MYPAGE_CREATE       	   : "/mypage/create", // 고객지원/마이페이지/회원 등록
 }
 
 export default URL;

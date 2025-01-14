@@ -5,26 +5,26 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import * as EgovNet from 'api/egovFetch';
 import URL from 'constants/url';
 import CODE from 'constants/code';
-import { CATALOG_BBS_ID } from 'config';
+import { SERVICE1_BBS_ID } from 'config';
 
-import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavInform';
+import { default as EgovLeftNav } from 'components/leftmenu/EgovLeftNavIntro';
 import EgovAttachFile from 'components/EgovAttachFile';
 import bbsFormVaildator from 'utils/bbsFormVaildator';
 import { getSessionItem } from 'utils/storage';
 
-function EgovCatalogEdit(props) {
-    console.group("EgovCatalogEdit");
+function EgovIntroService1Edit(props) {
+    console.group("EgovIntroService1Edit");
     console.log("------------------------------");
-    console.log("EgovCatalogEdit [props] : ", props);
+    console.log("EgovIntroService1Edit [props] : ", props);
 
     const navigate = useNavigate();
     const location = useLocation();
-    console.log("EgovCatalogEdit [location] : ", location);
+    console.log("EgovIntroService1Edit [location] : ", location);
 	//관리자 권한 체크때문에 추가(아래)
 	const sessionUser = getSessionItem('loginUser');
 	const sessionUserSe = sessionUser?.userSe;
 	
-    const bbsId = location.state?.bbsId || CATALOG_BBS_ID;
+    const bbsId = location.state?.bbsId || SERVICE1_BBS_ID;
     const nttId = location.state?.nttId || "";
 
     const [modeInfo, setModeInfo] = useState({ mode: props.mode });
@@ -131,7 +131,7 @@ function EgovCatalogEdit(props) {
                 requestOptions,
                 (resp) => {
                     if (Number(resp.resultCode) === Number(CODE.RCV_SUCCESS)) {
-                        navigate(URL.INFORM_CATALOG, {state:{bbsId : bbsId}});
+                        navigate(URL.INTRO_SERVICE1_LIST, {state:{bbsId : bbsId}});
                     } else {
                         // alert("ERR : " + resp.message);
                         navigate({pathname: URL.ERROR}, {state: {msg : resp.resultMessage}});
@@ -146,7 +146,7 @@ function EgovCatalogEdit(props) {
             <div className="location">
                 <ul>
                     <li><Link to={URL.MAIN} className="home">Home</Link></li>
-                    <li><Link to={URL.ADMIN}>자료실</Link></li>
+                    <li><Link to={URL.ADMIN}>제품소개</Link></li>
                     <li>{masterBoard && masterBoard.bbsNm}</li>
                 </ul>
             </div>
@@ -158,7 +158,7 @@ function EgovCatalogEdit(props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.groupEnd("EgovCatalogEdit");
+    console.groupEnd("EgovIntroService1Edit");
 
     return (
         <div className="container">
@@ -176,7 +176,7 @@ function EgovCatalogEdit(props) {
                         {/* <!-- 본문 --> */}
 
                         <div className="top_tit">
-                            <h1 className="tit_1">자료실</h1>
+                            <h1 className="tit_1">제품소개</h1>
                         </div>
                         
                         <h2 className="tit_2">{masterBoard && masterBoard.bbsNm} {modeInfo.modeTitle}</h2>
@@ -230,7 +230,7 @@ function EgovCatalogEdit(props) {
                                 </div>
 							}
                                 <div className="right_col btn1">
-                                    <Link to={URL.INFORM_CATALOG} className="btn btn_blue_h46 w_100">목록</Link>
+                                    <Link to={URL.INTRO_SERVICE1_LIST} className="btn btn_blue_h46 w_100">목록</Link>
                                 </div>
                             </div>
                             {/* <!--// 버튼영역 --> */}
@@ -245,4 +245,4 @@ function EgovCatalogEdit(props) {
     );
 }
 
-export default EgovCatalogEdit;
+export default EgovIntroService1Edit;
