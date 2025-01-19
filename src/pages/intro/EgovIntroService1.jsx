@@ -178,12 +178,12 @@ function EgovIntroService1() {
                         </ul>
                     </div>
 
+                    {/* 
                     <div class="pro-section section01">
                         <ul class="pro-img">
                             <li>
                                 <div class="img-box">
                                     <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_oWfg3zjl_ea85b1498fe6cd6af4942b5a6cb8802449226976.jpg" className="serviceimg" alt="wameter" />                
-                                    {/* <img src="http://www.spic.co.kr/home/data/file/pro01/3667170956_oWfg3zjl_ea85b1498fe6cd6af4942b5a6cb8802449226976.jpg" style="max-width:100%;max-height:100%" width="269"/>                </div> */}
                                 </div>
                                 <div class="txt-box">
                                     수도미터, 복갑습식, 일반                
@@ -223,12 +223,7 @@ function EgovIntroService1() {
                             </li>
                         </ul>
                     </div>
-
-
-
-
-
-
+                    */}
 
                     <div class="pro-section section02">
                         <div class="pro-sub-tit">
